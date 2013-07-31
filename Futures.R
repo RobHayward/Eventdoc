@@ -2,6 +2,7 @@
 # (Futures.csv) and calculates the descriptive statistics of exchange 
 # rates and measures of sentiment.    
 # Read spec position data----------------------------------
+require(eventstudies)
 da <- read.csv("./Futures.csv", header = TRUE)
 da$S1 <- (da$NCL-da$NCS)/(da$NCL+da$NCS+da$NCSP)
 da$S2 <- (da$NCL-da$NCS)/da$OI

@@ -13,9 +13,9 @@ DeLong <- function(rho, rhomu, r, mu, ra, rhosd){
 # Set misperception as a random vaiable with a mean of 1 and a 
 # standard deviation of 1
 set.seed(1)
-rho <- rnorm(1000, 1, 1)
-p <- DeLong(rho = rho, rhomu = 1, r = 0.1, mu = 0.5,
-            ra = 0.3, rhosd = 1)
+rho <- rnorm(1000, 4, 2)
+p <- DeLong(rho = rho, rhomu = 4, r = 0.1, mu = 0.5,
+            ra = 0.3, rhosd = 2)
 length(p)
 plot(p, type = 'l', main = "Delong model with misperception as random variable")
 da <- cbind(p, rho)
@@ -70,12 +70,16 @@ mu <- 0.5 * mu1 + 0.5 * mu2
 class(mu)
 plot(mu,type = 'l')
 # Now weight of speculators adjusts
-p <- DeLong(rho = 1, rhomu = 1, r = 0.1, mu = mu,
-            ra = 0.3, rhosd = 1)
+p <- DeLong(rho = 1, rhomu = 4, r = 0.1, mu = mu,
+            ra = 0.3, rhosd = 2)
 length(p)
-par(mfrow = c(2,1))
+# Plot simulated time seriess----------------------------
+pdf("DelongSim.pdf", paper= "a4", width = 9, height = 11, title = "residts")
+par(mfcol=c(2,1), oma = c(0,0,0,0))
 plot(mu, type = 'l', main = "Change in proportion of noise traders")
 plot(p, type = 'l', main = "Price when proportion of noise traders changes")
+dev.off()
+# Create table-------------------------------
 da <- cbind(p, mu)
 head(da)
 pz = as.zoo(da)
@@ -97,22 +101,6 @@ P.ex
 #Descriptive statistics of the extreme speculator weight-----------
 P.ext <- t(P.ex)
 P.ext
-mystats <- function(x, na.omit=FALSE){
-  if (na.omit)
-    x <- x[!is.na(x)]
-  m <- mean(x)
-  s <- sd(x) 
-  t <- m/s
-  n <- length(x)
-  skew <- sum((x-m)^3/s^3)/n
-  ps <- ((6*n*(n-1))/((n-1)*(n+1)*(n+3)))^0.5
-  kurt <- sum((x-m)^4/s^4)/n - 3
-  pk <- ((n^2-1)/((n-3)*(n + 5)))^0.5
-  max <- max(x)
-  min <- min(x)
-  return(c(n=n, mean=m, t= t, stdev=s, skew=skew, ps = ps, 
-           kurtosis=kurt, pk = pk, max = max, min = min))
-}
 # change currency file. 
 P.d <- apply(P.ext, 2, FUN = mystats, na.omit = TRUE)
 P.d
@@ -120,30 +108,14 @@ P.d
 # Use the standard model. Here rho and mu adjust as specified. 
 # Cut who to equal length of smoothed mu
 rho <- rho[1:999]
-p <- DeLong(rho = rho, rhomu = 1, r = 0.1, mu = mu,
-            ra = 0.3, rhosd = 1)
+p <- DeLong(rho = rho, rhomu = 4, r = 0.1, mu = mu,
+            ra = 0.3, rhosd = 2)
 da <- cbind(p, mu)
 head(p)
 pz = as.zoo(da)
 pz$r <- 100*diff(log(pz$p))
 # Descriptive statistics of total Delong series---------------------
 pz <- as.matrix(pz)
-mystats <- function(x, na.omit=FALSE){
-  if (na.omit)
-    x <- x[!is.na(x)]
-  m <- mean(x)
-  s <- sd(x) 
-  t <- m/s
-  n <- length(x)
-  skew <- sum((x-m)^3/s^3)/n
-  ps <- ((6*n*(n-1))/((n-1)*(n+1)*(n+3)))^0.5
-  kurt <- sum((x-m)^4/s^4)/n - 3
-  pk <- ((n^2-1)/((n-3)*(n + 5)))^0.5
-  max <- max(x)
-  min <- min(x)
-  return(c(n=n, mean=m, t= t, stdev=s, skew=skew, ps = ps, 
-           kurtosis=kurt, pk = pk, max = max, min = min))
-}
 # change currency file. 
 P.d <- apply(pz, 2, FUN = mystats, na.omit = TRUE)
 P.d
