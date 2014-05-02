@@ -1,0 +1,32 @@
+\documentclass[12pt, a4paper, oneside]{article} % Paper size, default font size and one-sided paper
+%\graphicspath{{./Figures/}} % Specifies the directory where pictures are stored
+%\usepackage[dcucite]{harvard}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{pdflscape}
+\usepackage[flushleft]{threeparttable}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage[comma, sort&compress]{natbib}% Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage{graphicx}
+%\bibliographystyle{plainnat}
+\bibliographystyle{agsm}
+\usepackage[colorlinks = true, citecolor = blue, linkcolor = blue]{hyperref}
+%\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+%\renewcommand[\harvardurl]{URL: \url}
+\begin{document}
+\title{Noise trader: random walks or forced march?}
+\author{Rob Hayward\footnote{University of Brighton Business School, Lewes Road, Brighton, BN2 4AT; Telephone 01273 642586.  rh49@brighton.ac.uk}}
+\date{\today}
+\maketitle
+\begin{abstract}
+Noise traders have been characterised as random providers of liquidity, as neutral equivalents of computor-generated random numbers.  hough noise traders may create risk that will deter rational traders from taking advantage of their knowledge of the fundamental value of securities (De-long) and thereby preventing them being driven into extinction as Friedman had asserted (Fridman), their presence  is usually seen as beneficial as they provide liquidity in a neutral fashion.  However, an analysis of noise trading that seeks to measure the weight of noise traders in the market and the strength of their opinin shows that herding is a common feature, highlighting the non-neutral influence that this speculative activity can impose on securities prices. 
+\end{abstract}
+
+\section{Introduction}
+\section{Literature}
+\section{Methods}
+\section{Analysis}
+\section{Conclusion}
+\end{document}
