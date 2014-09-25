@@ -1,4 +1,4 @@
-# The following code draws and prepares the data from the file 
+ # The following code draws and prepares the data from the file 
 # (Futures.csv) and calculates the descriptive statistics of exchange 
 # rates and measures of sentiment.    
 # Read spec position data----------------------------------

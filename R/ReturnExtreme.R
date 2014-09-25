@@ -1,6 +1,6 @@
 # This will try to look at the level speculation before a major price move
 # The following code draws and prepares the data from the file 
-# (Futures.csv) and calculates the descriptive statistics of exchange 
+# (Futures.csv) need to install mystats function
 # rates and measures of sentiment.    
 # Read spec position data----------------------------------
 require(eventstudies)
@@ -20,20 +20,27 @@ da.JPY <- subset(da[,2:6], subset = da$Exchange == "JPY")
 # subset extreme data--------------------------
 head(da.CAD)
 str(da.CAD)
-da.CAD$d <- as.numeric(da.CAD[,2] <= quantile(da.CAD[,2], 0.01, na.rm = TRUE))                   
-da.CAD$u <- as.numeric(da.CAD[,2] >= quantile(da.CAD[,2], 0.99, na.rm = TRUE))
-da.CAD.d <- subset(da.CAD, da.CAD$d == 1)
-da.CAD.u <- subset(da.CAD, da.CAD$u == 1)
-da.CAD.all <- apply(da.CAD, 2, FUN = mystats, na.omit = TRUE)
-da.CAD.up <- apply(da.CAD.u, 2, FUN = mystats, na.omit = TRUE)
-da.CAD.down <- apply(da.CAD.d, 2, FUN = mystats, na.omit = TRUE)
-da.CAD.all
-da.CAD.up
-da.CAD.down
-X <- data.frame(3)
-X[2,1] <- da.CAD.all[2,3]
-X[2,2] <- da.CAD.up[2,3]
-X[2,3] <- da.CAD.down[2,3]
-colnames(X) <- c("Total", "Up", "Down")
-rownames(X) <- "0.05"
+# chose currency (not yet lapply) "CAD", "EUR", "GBP", "CHF", "JPY"))
+j = "GBP"
+a <- paste("da.", j, sep = "")
+X <- matrix(NA, nrow = 2, ncol = 6)
+q = 1
+for(i in c(0.01, 0.05)) { 
+FX.l <- as.numeric(get(a)[,2] <= quantile(get(a)[,2], i, na.rm = TRUE))                   
+FX.g <- as.numeric(get(a)[,2] >= quantile(get(a)[,2], 1-i, na.rm = TRUE))
+FX.d <- subset(get(a), FX.l == 1)
+FX.u <- subset(get(a), FX.g == 1) 
+FX.all <- apply(get(a), 2, FUN = mystats, na.omit = TRUE)
+FX.up <- apply(FX.u, 2, FUN = mystats, na.omit = TRUE)
+FX.down <- apply(FX.d, 2, FUN = mystats, na.omit = TRUE)
+X[q,1] <- FX.all[2,2]
+X[q,2] <- FX.all[2,3]
+X[q,3] <- FX.up[2,2]
+X[q,4] <- FX.up[2,3]
+X[q,5] <- FX.down[2,2]
+X[q,6]<- FX.down[2,3]
+q = q+1
+}
+colnames(X) <- c("r. Total", "S1.total", "r.up", "S1.up", "r.down", "S1.down")
+rownames(X) <- c(0.01, 0.05)
 X
