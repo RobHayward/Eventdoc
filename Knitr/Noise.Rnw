@@ -55,6 +55,10 @@ for example Brock and Hommes [1998]; Lux [1995]; Lux and Marchesi [2000]) invest
 crashes, and feature fundamental traders versus noise traders. In these models, it is the noise traders who 
 induce the aberrant market behavior.  
 
+\href{http://papers.ssrn.com.ezproxy.liv.ac.uk/sol3/papers.cfm?abstract_id=869827}{Do noise traders move markets?}  There is strong evidence of herding by individual investors. THere is also momentum. There is reversal:  stocks that were heavily bought one year underperform; stocks that were heavily sold, outperform. The opposite in the short run:  heavily bought one week generate large returns the next week. 
+
+\href{http://restud.oxfordjournals.org.ezproxy.liv.ac.uk/content/60/1/1.full.pdf+html}{Campbell and Kyle, Smart money, noise trading and stock market behaviour}. In response to the evidence that the volatilty of stock prices is too great to be a function of discounted expected future earnings (Shiller (1981),  LeRoy and Porter (1981), this paper assesses whether stocks are influnced by exogenous, serially correlated noise. In this model, the noise arises from the interaction of noise traders.  
+
 
 
 

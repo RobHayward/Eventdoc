@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.19)  25 SEP 2014 17:20
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.19)  13 NOV 2014 14:23
 entering extended mode
 **Paper.tex
 ("C:\Users\Toshiba\Google Drive\Research\GIT\Eventdoc\Knitr\Paper.tex"
@@ -713,94 +713,90 @@ LaTeX Info: Redefining \nameref on input line 19.
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
-LaTeX Warning: Reference `fig:timeseries' on page 2 undefined on input line 34.
-
-
-
-LaTeX Warning: Reference `secref:empiric' on page 2 undefined on input line 36.
+LaTeX Warning: Reference `secref:empiric' on page 2 undefined on input line 40.
 
 
 [2] [3] [4] [5] [6] [7]
 
-LaTeX Warning: Reference `Chapter4' on page 8 undefined on input line 92.
+LaTeX Warning: Reference `Chapter4' on page 8 undefined on input line 100.
 
-[8] [9]
+[8]
 
-LaTeX Warning: Reference `sec:prob' on page 10 undefined on input line 110.
+LaTeX Warning: Reference `sec:prob' on page 9 undefined on input line 118.
 
-[10] [11]
+[9] [10] [11]
 
-LaTeX Warning: Reference `secref:ex' on page 12 undefined on input line 157.
+LaTeX Warning: Reference `secref:ex' on page 12 undefined on input line 165.
 
 
-Overfull \hbox (4.82397pt too wide) in paragraph at lines 173--173
+Overfull \hbox (4.82397pt too wide) in paragraph at lines 181--181
 [] 
  []
 
 [12]
 
-LaTeX Warning: Reference `secref:noise' on page 13 undefined on input line 179.
+LaTeX Warning: Reference `secref:noise' on page 13 undefined on input line 187.
 
 
 [13] [14] [15]
 
-LaTeX Warning: Reference `sec:prob' on page 16 undefined on input line 294.
+LaTeX Warning: Reference `sec:prob' on page 16 undefined on input line 302.
 
 [16] [17]
-Overfull \hbox (4.2084pt too wide) in paragraph at lines 311--312
+Overfull \hbox (4.2084pt too wide) in paragraph at lines 319--320
 []\OT1/cmr/m/n/12 To un-der-stand what the noise-trader model of spec-u-la-tive
  be-haviour means
  []
 
 
-LaTeX Warning: Reference `secref:event' on page 18 undefined on input line 313.
+LaTeX Warning: Reference `secref:event' on page 18 undefined on input line 321.
 
 
 [18]
 
-LaTeX Warning: Reference `AppendixB' on page 19 undefined on input line 336.
+LaTeX Warning: Reference `AppendixB' on page 19 undefined on input line 344.
 
 
-LaTeX Warning: Reference `secref:sim' on page 19 undefined on input line 336.
+LaTeX Warning: Reference `secref:sim' on page 19 undefined on input line 344.
 
 
-Overfull \hbox (53.86288pt too wide) in paragraph at lines 321--339
+Overfull \hbox (53.86288pt too wide) in paragraph at lines 329--347
 [] 
  []
 
 [19] [20] [21]
 
-LaTeX Warning: Reference `AppendixB' on page 22 undefined on input line 373.
+LaTeX Warning: Reference `AppendixB' on page 22 undefined on input line 381.
 
 
-LaTeX Warning: Reference `apAdes' on page 22 undefined on input line 373.
+LaTeX Warning: Reference `apAdes' on page 22 undefined on input line 381.
 
 
-Overfull \hbox (71.37811pt too wide) in paragraph at lines 355--376
+Overfull \hbox (71.37811pt too wide) in paragraph at lines 363--384
 [] 
  []
 
 [22]
 
-LaTeX Warning: Reference `AppendixA' on page 23 undefined on input line 379.
+LaTeX Warning: Reference `AppendixA' on page 23 undefined on input line 387.
 
 
-LaTeX Warning: Reference `apAdes' on page 23 undefined on input line 379.
+LaTeX Warning: Reference `apAdes' on page 23 undefined on input line 387.
 
 [23
 
 
 ]
-Overfull \hbox (11.15791pt too wide) in paragraph at lines 384--405
+Overfull \hbox (11.15791pt too wide) in paragraph at lines 392--413
 [] 
  []
 
 [24]
 
-LaTeX Warning: Reference `AppendixB' on page 25 undefined on input line 408.
+LaTeX Warning: Reference `AppendixB' on page 25 undefined on input line 416.
 
 
-LaTeX Warning: Reference `apAdes' on page 25 undefined on input line 408.
+LaTeX Warning: Reference `apAdes' on page 25 undefined on input line 416.
 
 [25
 
@@ -809,79 +805,79 @@ LaTeX Warning: Reference `apAdes' on page 25 undefined on input line 408.
 
 
 ] [30] [31] [32] [33]
-Overfull \hbox (52.02304pt too wide) in paragraph at lines 531--579
+Overfull \hbox (52.02304pt too wide) in paragraph at lines 539--587
 [] 
  []
 
 
-LaTeX Warning: Float too large for page by 31.92879pt on input line 579.
+LaTeX Warning: Float too large for page by 31.92879pt on input line 587.
 
-[34] <../Figures/RRCum16.pdf, id=565, 506.89375pt x 480.79625pt>
+[34] <../Figures/RRCum16.pdf, id=553, 506.89375pt x 480.79625pt>
 File: ../Figures/RRCum16.pdf Graphic file (type pdf)
 
 <use ../Figures/RRCum16.pdf>
-Package pdftex.def Info: ../Figures/RRCum16.pdf used on input line 592.
+Package pdftex.def Info: ../Figures/RRCum16.pdf used on input line 600.
 (pdftex.def)             Requested size: 405.51555pt x 384.63751pt.
 
-Overfull \hbox (15.51555pt too wide) in paragraph at lines 592--593
+Overfull \hbox (15.51555pt too wide) in paragraph at lines 600--601
  [][] 
  []
 
 
-LaTeX Warning: Reference `secref:empiric' on page 35 undefined on input line 59
-5.
+LaTeX Warning: Reference `secref:empiric' on page 35 undefined on input line 60
+3.
 
 
-LaTeX Warning: Reference `sec:behavioural' on page 35 undefined on input line 5
-95.
+LaTeX Warning: Reference `sec:behavioural' on page 35 undefined on input line 6
+03.
 
 [35
 
 
  <C:/Users/Toshiba/Google Drive/Research/GIT/Eventdoc/Figures/RRCum16.pdf>]
-<../Figures/RRCum16a.pdf, id=575, 498.86375pt x 470.75874pt>
+<../Figures/RRCum16a.pdf, id=563, 498.86375pt x 470.75874pt>
 File: ../Figures/RRCum16a.pdf Graphic file (type pdf)
 
 <use ../Figures/RRCum16a.pdf>
-Package pdftex.def Info: ../Figures/RRCum16a.pdf used on input line 602.
+Package pdftex.def Info: ../Figures/RRCum16a.pdf used on input line 610.
 (pdftex.def)             Requested size: 399.09154pt x 376.60751pt.
 
-Overfull \hbox (9.09154pt too wide) in paragraph at lines 602--603
+Overfull \hbox (9.09154pt too wide) in paragraph at lines 610--611
  [][] 
  []
 
 [36 <C:/Users/Toshiba/Google Drive/Research/GIT/Eventdoc/Figures/RRCum16a.pdf>]
 
 LaTeX Warning: Reference `sec:behavioural' on page 37 undefined on input line 6
-07.
+15.
 
 [37]
-Overfull \hbox (28.93852pt too wide) in paragraph at lines 614--647
+Overfull \hbox (28.93852pt too wide) in paragraph at lines 622--655
 [] 
  []
 
-[38] <../Figures/FPCum6w.pdf, id=599, 494.84875pt x 385.44pt>
+[38] <../Figures/FPCum6w.pdf, id=587, 494.84875pt x 385.44pt>
 File: ../Figures/FPCum6w.pdf Graphic file (type pdf)
 
 <use ../Figures/FPCum6w.pdf>
-Package pdftex.def Info: ../Figures/FPCum6w.pdf used on input line 657.
+Package pdftex.def Info: ../Figures/FPCum6w.pdf used on input line 665.
 (pdftex.def)             Requested size: 395.87955pt x 308.35242pt.
 
-Overfull \hbox (5.87955pt too wide) in paragraph at lines 657--658
+Overfull \hbox (5.87955pt too wide) in paragraph at lines 665--666
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../Figures/FPCum6wa.pdf, id=600, 494.84875pt x 385.44pt>
+<../Figures/FPCum6wa.pdf, id=588, 494.84875pt x 385.44pt>
 File: ../Figures/FPCum6wa.pdf Graphic file (type pdf)
 
 <use ../Figures/FPCum6wa.pdf>
-Package pdftex.def Info: ../Figures/FPCum6wa.pdf used on input line 669.
+Package pdftex.def Info: ../Figures/FPCum6wa.pdf used on input line 677.
 (pdftex.def)             Requested size: 395.87955pt x 308.35242pt.
 
-Overfull \hbox (5.87955pt too wide) in paragraph at lines 669--670
+Overfull \hbox (5.87955pt too wide) in paragraph at lines 677--678
  [][] 
  []
 
@@ -889,10 +885,10 @@ Overfull \hbox (5.87955pt too wide) in paragraph at lines 669--670
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `AppendixB' on page 39 undefined on input line 672.
+LaTeX Warning: Reference `AppendixB' on page 39 undefined on input line 680.
 
 
-LaTeX Warning: Reference `Asecref:event' on page 39 undefined on input line 672
+LaTeX Warning: Reference `Asecref:event' on page 39 undefined on input line 680
 .
 
 [39
@@ -908,26 +904,26 @@ mentsoftraders/index.htm
  []
 
 [44] [45] [46] [47])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 692.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 700.
  [48]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 692.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 700.
 
 ("C:\Users\Toshiba\Google Drive\Research\GIT\Eventdoc\Knitr\Paper.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 692.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 692.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 700.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 700.
 Package rerunfilecheck Info: File `Paper.out' has not changed.
-(rerunfilecheck)             Checksum: 540215FAA667A579DD49387BA286C979;1337.
+(rerunfilecheck)             Checksum: F39036C5A4340B9DD9172E4CCEA2EFFA;1341.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 692.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 700.
  ) 
 Here is how much of TeX's memory you used:
- 17837 strings out of 494045
- 336722 string characters out of 3145963
- 459769 words of memory out of 3000000
- 20635 multiletter control sequences out of 15000+200000
+ 17816 strings out of 494045
+ 336221 string characters out of 3145963
+ 459607 words of memory out of 3000000
+ 20619 multiletter control sequences out of 15000+200000
  12301 words of font info for 44 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  56i,13n,69p,2737b,540s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -951,9 +947,9 @@ pe1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb>
-Output written on Paper.pdf (48 pages, 465128 bytes).
+Output written on Paper.pdf (48 pages, 462312 bytes).
 PDF statistics:
- 768 PDF objects out of 1000 (max. 8388607)
- 176 named destinations out of 1000 (max. 500000)
+ 755 PDF objects out of 1000 (max. 8388607)
+ 171 named destinations out of 1000 (max. 500000)
  273 words of extra memory for PDF output out of 10000 (max. 10000000)
 
