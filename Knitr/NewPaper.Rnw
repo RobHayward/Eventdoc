@@ -1,0 +1,110 @@
+\documentclass[12pt, a4paper, oneside]{article} % Paper size, default font size and one-sided paper
+%\graphicspath{{./Figures/}} % Specifies the directory where pictures are stored
+%\usepackage[dcucite]{harvard}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{pdflscape}
+\usepackage[flushleft]{threeparttable}
+\usepackage{multirow}
+\usepackage[comma, sort&compress]{natbib}% Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage{graphicx}
+%\bibliographystyle{plainnat}
+\bibliographystyle{agsm}
+\usepackage[colorlinks = true, citecolor = blue, linkcolor = blue]{hyperref}
+%\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+%\renewcommand[\harvardurl]{URL: \url}
+ \usepackage{listings}
+  \usepackage{tikz}
+ \usetikzlibrary{arrows,positioning}
+ \usepackage{color}
+ %\graphicspath{{../Pictures/}}
+\definecolor{mygrey}{gray}{0.95}
+\lstset{backgroundcolor=\color{mygrey}}
+\begin{document}
+\title{Speculation in foreign exchange: noise or information}
+\author{Rob Hayward\footnote{University of Brighton Business School, Lewes Road, Brighton, BN2 4AT; Telephone 01273 642586.  rh49@brighton.ac.uk. }} 
+\date{\today}
+\maketitle
+\begin{abstract}
+An event study of extremes is used to assess the Keynesian and Friedman views of speculation.    Speculative extremes are ranked by weight of activity and intensity of sentiment.  In either case, the extreme says little about the future, suggesting that speculation is more than just random noise and supporting the idea there is some informational content that is being passed through to the price. A unique dataset of risk-reversal skew on option prices is used to measure the intensity of speculative sentiment.  This is supplemented with regulatory data on the weight of speculative positions.  
+\end{abstract}
+\section*{Introduction}
+  There are a range of ideas about the way that speculation can affect financial markets.  Towards one end of the spectrum is the view of Keynes from Chapter 13 of \emph{The General Theory} where he identified speculation as a myopic, sentiment-driven activity, dominated by the desire to ``beat the gun'' or  ``outwit the crowd'' \citet[p. 101]{Keynes1936}. Here speculative activity is a problem that, at its most extreme, will cause booms, reversals and will discourage fundamental long-term investors from participating. It is noise that does not emerge randomly, but feeds off itself as a feedback of sentiment  encourages  trends and serial correlation in asset prices.
+
+At the other end, Milton Friedman argued that speculation was a stabilising force, providing liquidity and helping to ensure that markets swiftly find equilibrium. In arguing in favour of flexible exchange rates, Friedman asserted that successful speculators would be those that managed to correctly buy when prices  were below fundamental value and sell above that price \citet{FriedmanPositive}. Therefore, the speculative process would favour those able to access or utilise information over those that trading on \emph{noise} and, through a Darwinian process, informed speculation would dominate.  This view regards speculation as an key lubricant of financial market as it provides liquidity and facilitates price discovery. Here, speculation is stabilising and its absence will increase volatility and will undermine the process of price discovery.  
+
+The aim of this paper is to understand more about the nature of speculation by investigating the relationship between both the intensity of speculation and the weight of speculataive positions with the movement of prices in the foreign exchange market.   If speculators are uninformed and their activity can be regarded as noise, their most extreme sentiment and the time when speculators have the greatest weight in market activity should be those when price are driven from their fundamnetal value and reversals are most likely to take place; if speculators are informed price should follow a random walk after the extremes.  
+
+A unique set of option prices are used to identify the intensity of speculative sentiment.  US regulatory positions measure the prominence of speculators in the market. Speculation does not appear to be random, there is momentum to the rise and fall in sentiment and positions.  However, while currency prices co-move with positions and sentiment, there is no informational content from these positions, supporting the suggestion that speculative actvity has a permanent affect on prices and that is consistent with speculation being part of the process of price discovery. Speculators do not seem to drive prices from fundamental value and their presence does not seem to hamper the incorporation of information into prices. 
+
+\section{Literature}
+\subsection*{Overview}
+  Speculation is an important concept in economics, particular in the area of finance.  However, there is no clear, unambiguous theory of specuation. In a number of fields the term \emph{noise-trading} has been used.   \citet{bloomfield2009noise} suggests that there are three categories of noise-trader: uninformed speculators, market-making liquidity-providers and informed speculators. The first of these groups is similar to the picture of speculation provided by Keynes, the second refers to those agents or institutions paid for providing liqidity and for taking the risk of meeting an informed trader in the market (these are also called market-makets), and the final category is close to the idea of speculation that has been presented by Fridman. 
+
+In the \emph{microstrucrture} literature, the term noise-trader is interchanged with \emph{liquidity-trader} to mean those trading with a lack of information and those trading for liquidty reasons.  They do not usually distinguish between institutional and psychological reasons for the lack of attention to fundametal information. Nonetheless, liquidity tends to refer to those trading without reference to fundamental value: they must execute orders.  This may mean that they just execute customer orders at the current price or it may be that they buy and sell with reference to a benchmark index or to fulfil a hedging strategy.  Examples of the microstructure approach are found in \citet{Kyle1985Continuous} and \citet{glosten1985bid}.  
+
+%this paragraph must go somewhere else.  I do not know where. 
+Nonetheless, the distinction between market-making speculative activity is not precise.\footnote{The implementation of the \emph{Volcker} Rule in the US which will limit the scope of US investment banks to trade on their own account has raised the question of where market-making turns into speculation.}
+
+The other question is whether either of these types uninformed speculative noise-trading can be considered as being just random noise?    \citet[p. 1]{GortonNoise}  say that noise-traders are all those trading in markets for ``non-information-based reasons''. This is a solution to the  \citet{Grossman1980Impossibility} paradox that will allow those traders prepared to pay the cost of acquiring information to take advantage of it. Informed traders, knowing that the current price is below fundamental value, can purchase from noise-traders, who either do not know or do not care. The noise drives prices from their fundamental value and ensures that the cost of acquiring information can be regained and therefore provides the incentive for informed traders to improve the informational efficiency of asset prices.  
+
+However, though the idea that noise is a random variable may be a construction that is useful for modelling and it may be justified in analysis of broader themes of microstructure and levels of market efficiency, this exogenous construct may be an over-simplification that is not apprpropriate when looking for more understanding of speculation itself. Institutional and psychological explanations for noise-trading suggest that there are endogenous elements that suggest non-random effects.The modelling of noise is related to the rise of rational expectations in economics.  A mean zero, normally-distributed random variable influences supply in the original version supplied by \citet{Muth1961Rational}.  
+\subsection*{The problem of uninformed noise-traders}
+The traditional Keynesian view of speculation asserted that it will be damaging because it will make it even harder for informed-traders to overcome undertainty and apply fundamental information about long-term value. This is view finds some supported in Shiller's observation that stock prices are more volatile than the underlying earnings information on which valuation should be based \citet{ShillerVol}. In addition, \citet{Delong1990noise} and \citet{shleifer1997limits} show that constrained horizons can cause noise-trading to limit the ability of informed traders to take advantage of profitable opportunities for fear of further divergence from fundamental value before convergence is achieved. 
+
+ Shliefer, Summers, DeLong etc identify the limits to arbitrage. The other writings are Battalio, Hatch and Jennings (1997), Harris and Schultz (1998) and Scheinkman and Xiong (2003).  Lowenstein and Willard (2006)
+
+It would be good to have some more modern ideas here.  Maybe they are just the empirical results. 
+\subsection{Interplay between Informed and uninformed}
+Fisher Black identifies noise as ``the arbitrary element in expectations'' \citet[p.529]{BlackNoise}. He cites a number of ways that noise affects the trading in financial markets.  He speaks about people trading on noise over information; he says that noise makes financial markets possible but imperfect. The more noise-traders that there are, the more liqiity and the easier to trade; the more noise-traders the higher the level of inefficiency in the market and the more likely that prices will be driven from their fundamental value. He suggest that the noise will limit the scope for complete arbitrage and that it will be difficult to distinguish between noise and information traders. 
+
+  Why do noise traders exist?  There are liquidity and behavioural explanations. There are also a number of models that show noise traders as momentum traders. 
+
+
+
+
+\subsection{Other empirical work}
+The assessmen of these theoreis about speculation and noise-trading is rather limited. In part this is becuase information is limited and it is usually difficult to distiguish between speculators and other investors and, even more so, between informed and uninformed. 
+
+Some of the empirical work will identify specuation or noise with momentum trading. 
+\citet{da2010sum} seek to measure investor sentiment and assess how it affects securities prices. they create a index of investor sentiment from web searches and use this to predict return reversals.  the results show that sentiment can predict market turns. this is a contrast to traditional ways of measuring sentiment:  proxy for sentiment with market-based measures like volume, closed-end fund discount, ipo first-day returns, ipo volume, option implied volatilities and mutual fund flows. baker and wurgaler (2007) have a comprehensive survey. this is more than just investors sentiment. there is an issue with the measurement of an input (sentiment) with an output (market price). use of surveys like the university of michigan consumer sentiment survey etc.  there is a negative contemporaneous correlation between fears and stock market returns. however, there is a reversal in the relationship after two days.  this is consistent with ``sentiment induced temporary mispricing'' \citet[p. 4]{da2010sum}.  there is a positive correlation between the fears index and bond prices.  however, this also reverses in following days. there is a relationship between the fears index and daily market volatility (realised volatility and the vix index). there is also evidence of inflows and outflows from mutual funds.  this may help to explain the contrast between evidence from the equity market and the bond market.  
+
+the effect of noise traders on liquidity is unclear. they may supply liquidity by providing limit orders and making some returns for providing liquidity; they may increase bid-ask spreads by using market orders to take advantage of (potentially non-existent) informational advantages. noise traders may increase (if they have some privileged information, they add to the price pressure) or reduce efficiency (if they increase liquidity and reduce the ratio of informed to uninformed traders). 
+are day traders profitable? are these the face of noise traders?  how does this show up in the foreign exchange market?  There is a very recent paper. \href{http://www.sciencedirect.com/science/article/pii/S1042443115000682}{Paper on profitability of fx trading}.
+
+Noise traders exert positive effects on liquidity but weaken price reversals. a tax on trading will reduce noise traders but will also reduce the influence of fundamental traders. their experiment distinguishes between informed traders, noise traders and liquidity traders.  \emph{soes bandits} are those taking advantage of the soes system to trade quickly and take advantage of small price movements. there is a lot of focus on the effect that taxation may have on the different categories of trader. there is an experiment that allows much more to be held constant. there are three views of noise traders that are tested here:  noise traders are skill experts taking advantage of information in the order book or price movements;  rationally providing liquidity by acting as market-maker; acting irrationally as noise traders. noise traders in this experiment appear to act as irrational contrariety traders. noise traders reduce the efficiency of the market but increase liquidity.
+in theory, traders may trade on mistaken fundamental information.  shliefer and summmer (1990) use momentum.  however, kaniel, saar and titman (2006) find evidence of contrariety strategies. this is associated with short-term speculation. does the activity drive the price away from fundamental value? stiglitz (1990) is one of the arguments in favour of a tobin tax. 
+
+there is a question about whether experimental markets (like this paper) are superior to actual markets where the identification of trader types is difficult.  theory - delong, summers, shleifer etc,  scheinkman and xiong (2003).  lowenstein and willard (2006).  empirical work:  (see, for example, garvey and murphy [2001], linnainmaa [2003], barber et. al. [2004], and kaniel, saar, and titman [2006].  
+
+\href{http://papers.ssrn.com.ezproxy.liv.ac.uk/sol3/papers.cfm?abstract_id=869827}{do noise traders move markets?}  there is strong evidence of herding by individual investors. there is also momentum. there is reversal:  stocks that were heavily bought one year under perform; stocks that were heavily sold, outperform. the opposite in the short run:  heavily bought one week generate large returns the next week. 
+
+\href{http://restud.oxfordjournals.org.ezproxy.liv.ac.uk/content/60/1/1.full.pdf+html}{campbell and kyle, smart money, noise trading and stock market behaviour}. in response to the evidence that the volatility of stock prices is too great to be a function of discounted expected future earnings (shiller (1981),  leroy and porter (1981), this paper assesses whether stocks are influenced by exogenous, serially correlated noise. in this model, the noise arises from the interaction of noise traders. 
+ 
+\subsection{why this is important}
+The nature of speculation and the role of noise-traders has become increasingly imporant since the golbal financial crisis (GFC).  There are a number of comtemporary questions where the role and nature of speculation is at the center of the debate.  Regulations or taxes that reduce the reduce the amount of speculation have generally been considered to be helpful in reducing risk and encouraging more long-term attitudes towards investment.  However, where these measures reduce liquidity, higher risk and an increase in other costs may provide an countervailing force.  For example, the so-called \emph{Volcker Rule} would prevent US inventment banks trading on their own-account.  This, it has been argued, will reduce liquidity in the bond market by causing investment banks to hold lower levels of bond inventory on their books.  This may increase the amount of \emph{price slippage} when final investor adjust their positions.  
+
+for related papers on securities transaction taxes see stiglitz [1989], summers and summers [1989], 
+amihud and mendelson [1993], schwert and seguin [1993], umlauf [1993], subrahmanyam [1998], dow 
+and rahi [2000], habermeir and kirilenko [2003], and hinman [2003]. 
+
+interesting difference between supplying and demanding liquidity.  limit orders supply liquidity, market orders demand liquidity.  the activity of liquidity traders will tend to change through the course of the session, moving from supplying to demanding liquidity. noise traders tend to act in the opposite manner.  they tend to supply more liquidity as the session progresses. black (1986) noise traders put noise into prices.  the effect of noise traders on liquidity: price impact of trades is lower when noise traders are present.  however, this is mostly in the temporary impact on prices rather than the permanent impact. therefore, noise traders tend to reduce the amount of volatility in prices because market orders do not temporarily have an effect and then reverse.  the presence of noise traders will increase pricing errors. however, this depends on fundamental traders have valuable information. 
+
+there are a number of different ways that noise traders could behave:  activating as soes bandits (using the nasdaq small order execution system to make profits) or by using information about the order book; by providing liquidity like a market-maker as a service to liquidity-traders as in grossman miller (1988);  as irrational noise traders, using trading rules or popular models (shiller 1984, 1990) positive feedback or contrariety.  
+
+footnote -  there is an empirical evidence that individual investors in various countries trade in a contrariety fashion (e.g., choe, kho, and stulz [1999], grinblatt and keloharju [2000, 2001], jackson [2003], richards [2005], kaniel, saar, titman [2006]). for experimental evidence consistent with contrariety behaviour see 
+bloomfield, tayler, and zhou (2997)
+
+ what is the source of this noise?  what are the institutions? the importance of noise traders here is that they represent a zero-mean, normally distributed random viable.  this is also the description that is provided in kyle (1985).  liquidity traders trade due to imbalance in the timing of consumption or from portfolio considerations. shleifer, summers and delong have trading activity that is affected by sentiment, models or "fads".  this is important.  how the average may not be zero. there is a range of behavioural biases that may account for this (see barberis and thaler [2003]).the literature on heterogeneous traders also focuses on noise traders as trend chasers.  these models (see for example brock and hommes [1998]; lux [1995]; lux and marchesi [2000]) investigate bubbles and crashes, and feature fundamental traders versus noise traders. in these models, it is the noise traders who 
+induce the aberrant market behaviour.   
+
+there is also the issue of speculation in commodities markets.  if this is random, the speculation does not affect the overall price, if this is ,liquidity-driven, it may affect the price level. 
+
+fisher black says ```anything that changes the amount of character of noise trading will change the volatility of price." \citet[p. 533]{blacknoise}. 
+
+% does this now need something on the reason why the foreign exchange market is used?  could be the keynes speuclative activity, fridman paper, liquidity etc. 
+\bibliography{../../../../myrefs}
+
+
+\end{document}
