@@ -1,3 +1,11 @@
 .Rproj.user
 .Rhistory
 .RData
+.pdf
+*-concordance*
+*.synctex.gz
+.bbl
+.log
+Other/
+*.Rproj
+*pdf
