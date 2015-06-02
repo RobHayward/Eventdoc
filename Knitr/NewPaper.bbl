@@ -21,15 +21,21 @@ Da, Z., Engelberg, J. \harvardand\ Gao, P.  \harvardyearleft
   \harvardyearleft 1990\harvardyearright , `Noise trader risk in financial
   markets', {\em The Journal of Political Economy} {\bf 98}(4),~703--738.
 
+\harvarditem{Dow \harvardand\ Gorton}{2008}{GortonNoise}
+Dow, J. \harvardand\ Gorton, G.  \harvardyearleft 2008\harvardyearright , Noise
+  traders, {\em in} S.~N. Durlauf \harvardand\ L.~E. Blume, eds, `The New
+  Palgrave: Dictionary of Economics', 2 edn, Palgrave Macmillan: New York.
+
 \harvarditem{Friedman}{1953}{FriedmanPositive}
 Friedman, M.  \harvardyearleft 1953\harvardyearright , The case for flexible
   exchange rates, {\em in} `Essays in Positive Economics', University of
   Chicago Press, pp.~157--203.
 
-\harvarditem{Glosten}{1985}{glosten1985bid}
-Glosten, L.  \harvardyearleft 1985\harvardyearright , `Bid, ask and transaction
-  prices in a specialist market with heterogeneously informed traders', {\em
-  Journal of Financial Economics} {\bf 14}(1),~71--100.
+\harvarditem{Glosten \harvardand\ Milgrom}{1985}{glosten1985bid}
+Glosten, L.~R. \harvardand\ Milgrom, P.~R.  \harvardyearleft
+  1985\harvardyearright , `Bid, ask and transaction prices in a specialist
+  market with heterogeneously informed traders', {\em Journal of financial
+  economics} {\bf 14}(1),~71--100.
 
 \harvarditem{Keynes}{1936}{Keynes1936}
 Keynes, J.~M.  \harvardyearleft 1936\harvardyearright , {\em The General Theory
@@ -43,6 +49,16 @@ Kyle, A.~S.  \harvardyearleft 1985\harvardyearright , `Continuous auctions and
 Shiller, R.~J.  \harvardyearleft 1981\harvardyearright , `Do stock price move
   too much to be justified by subsequent changes in dividends?', {\em American
   Economic Review} {\bf 71}(3),~421--436.
+
+\harvarditem{Shiller}{1984}{ShillerFashion}
+Shiller, R.~J.  \harvardyearleft 1984\harvardyearright , `Stock prices and
+  social dynamics', {\em Brookings Papers on Economic Activity} {\bf
+  Fall},~457--498.
+
+\harvarditem{Shleifer \harvardand\ Vishny}{1997}{shleifer1997limits}
+Shleifer, A. \harvardand\ Vishny, R.~W.  \harvardyearleft 1997\harvardyearright
+  , `The limits of arbitrage', {\em The Journal of Finance} {\bf
+  52}(1),~35--55.
 
 \harvarditem{Tobin}{1978}{TobinTax}
 Tobin, J.  \harvardyearleft 1978\harvardyearright , `A proposal for
