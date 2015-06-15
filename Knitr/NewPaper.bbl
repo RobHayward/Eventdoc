@@ -1,10 +1,5 @@
 \begin{thebibliography}{xx}
 
-\harvarditem{BIS}{2010}{BISFX}
-BIS  \harvardyearleft 2010\harvardyearright , `Triennial central bank survey of
-  foreign exchange and derivatives market activity in 2010'.
-\newline\harvardurl{http://www.bis.org/publ/rpfxf10t.htm}
-
 \harvarditem{BIS}{2013}{BISFX2013}
 BIS  \harvardyearleft 2013\harvardyearright , `Triennial central bank survey of
   foreign exchange and derivatives market activity in 2013'.
@@ -36,11 +31,6 @@ Chelley-Steeley, P.~L. \harvardand\ Tsorakidis, N.  \harvardyearleft
   \harvardyearleft 1990\harvardyearright , `Noise trader risk in financial
   markets', {\em The Journal of Political Economy} {\bf 98}(4),~703--738.
 
-\harvarditem{Dolly}{1933}{Dolly1933}
-Dolly, J.  \harvardyearleft 1933\harvardyearright , `Characteristics and
-  procedures of common stock split-ups', {\em Harvard Business Review} {\bf
-  11}(3),~316 -- 327.
-
 \harvarditem{Dow \harvardand\ Gorton}{2008}{GortonNoise}
 Dow, J. \harvardand\ Gorton, G.  \harvardyearleft 2008\harvardyearright , Noise
   traders, {\em in} S.~N. Durlauf \harvardand\ L.~E. Blume, eds, `The New
@@ -51,30 +41,14 @@ Evans, M.~D. \harvardand\ Lyons, R.  \harvardyearleft 2002\harvardyearright ,
   `Order flow and exchange rate dynamics', {\em The Journal of Political
   Economy} {\bf 10}(1),~170--180.
 
-\harvarditem[Fama et~al.]{Fama, Fisher, Jensen \harvardand\
-  Roll}{1969}{FamaFisherJensenRoll}
-Fama, E., Fisher, L., Jensen, M. \harvardand\ Roll, R.  \harvardyearleft
-  1969\harvardyearright , `The adjustment of stock prices to new information',
-  {\em International Economic Review} {\bf 10}(1),~1--21.
-
 \harvarditem{Forbes}{2009}{FrobesBehaviour}
 Forbes, W.  \harvardyearleft 2009\harvardyearright , {\em Behavioural Finance},
   John Wiley, Chichester.
-
-\harvarditem{Frankel \harvardand\ Froot}{1987}{FrankelFroot1987}
-Frankel, J.~A. \harvardand\ Froot, K.  \harvardyearleft 1987\harvardyearright ,
-  `Using survey data to test standard propositions regarding exchange rate
-  expectations', {\em American Economic Review} {\bf 77},~133 -- 153.
 
 \harvarditem{Friedman}{1953}{FriedmanPositive}
 Friedman, M.  \harvardyearleft 1953\harvardyearright , The case for flexible
   exchange rates, {\em in} `Essays in Positive Economics', University of
   Chicago Press, pp.~157--203.
-
-\harvarditem{Froot \harvardand\ Frankel}{1989}{FrootFrankelFDB}
-Froot, K. \harvardand\ Frankel, J.~A.  \harvardyearleft 1989\harvardyearright ,
-  `Forward discount bias: Is it an exchange rate risk premium?', {\em Quarterly
-  Journal of Economics} {\bf 6},~139 -- 161.
 
 \harvarditem{Garman \harvardand\ Kohlhagan}{1983}{GarmanKohlhagan}
 Garman, M. \harvardand\ Kohlhagan, S.  \harvardyearleft 1983\harvardyearright ,
@@ -99,14 +73,14 @@ Keynes, J.~M.  \harvardyearleft 1936\harvardyearright , {\em The General Theory
 Kyle, A.~S.  \harvardyearleft 1985\harvardyearright , `Continuous auctions and
   insider trading', {\em Econometrica} {\bf 53}(6),~1315--1335.
 
+\harvarditem{Milgrom \harvardand\ Stokey}{1982}{milgrom1982information}
+Milgrom, P. \harvardand\ Stokey, N.  \harvardyearleft 1982\harvardyearright ,
+  `Information, trade and common knowledge', {\em Journal of Economic Theory}
+  {\bf 26}(1),~17--27.
+
 \harvarditem{Muth}{1961}{muth1961Rational}
 Muth, J.~F.  \harvardyearleft 1961\harvardyearright , `Rational expectations
   and the theory of price movements', {\em Econometrica} {\bf 29},~315 -- 335.
-
-\harvarditem{Myers \harvardand\ Bakay}{1948}{MyersBakay}
-Myers, J. \harvardand\ Bakay, A.  \harvardyearleft 1948\harvardyearright ,
-  `Influence of stock split-ups on market price', {\em Harvard Business Review}
-  {\bf 26}(2),~251 -- 255.
 
 \harvarditem{Neely \harvardand\ Weller}{2011}{NeelyWeller}
 Neely, C.~J. \harvardand\ Weller, P.~A.  \harvardyearleft 2011\harvardyearright
