@@ -14,6 +14,11 @@ Black, F. \harvardand\ Scholes, M.  \harvardyearleft 1973\harvardyearright ,
   `The pricing of options and corporate liabilities', {\em Journal of Political
   Economy} {\bf 81}(3),~637--654.
 
+\harvarditem{Brunnermeier \harvardand\ Pedersen}{2009}{BrunnermeierLiquidity}
+Brunnermeier, M. \harvardand\ Pedersen, L.  \harvardyearleft
+  2009\harvardyearright , `Market liquidity and funding liquidity', {\em Review
+  of Financial Studies} {\bf 22}(6),~2201 -- 2238.
+
 \harvarditem{{CFTC}}{2012}{cot}
 {CFTC}  \harvardyearleft 2012\harvardyearright , `Us commodity futures trading
   commission: Cot'.
@@ -61,6 +66,10 @@ Glosten, L.~R. \harvardand\ Milgrom, P.~R.  \harvardyearleft
   market with heterogeneously informed traders', {\em Journal of financial
   economics} {\bf 14}(1),~71--100.
 
+\harvarditem{Gorton}{2010}{Gorton}
+Gorton, G.~B.  \harvardyearleft 2010\harvardyearright , {\em Slapped in the
+  face by the invisible hand: banking and the panic of 2007}, OUP, Oxford.
+
 \harvarditem{Kapner}{2006}{Global}
 Kapner, K.  \harvardyearleft 2006\harvardyearright , `Risk reversals', {\em
   Global Financial Markets Institute} .
@@ -72,11 +81,6 @@ Keynes, J.~M.  \harvardyearleft 1936\harvardyearright , {\em The General Theory
 \harvarditem{Kyle}{1985}{Kyle1985Continuous}
 Kyle, A.~S.  \harvardyearleft 1985\harvardyearright , `Continuous auctions and
   insider trading', {\em Econometrica} {\bf 53}(6),~1315--1335.
-
-\harvarditem{Milgrom \harvardand\ Stokey}{1982}{milgrom1982information}
-Milgrom, P. \harvardand\ Stokey, N.  \harvardyearleft 1982\harvardyearright ,
-  `Information, trade and common knowledge', {\em Journal of Economic Theory}
-  {\bf 26}(1),~17--27.
 
 \harvarditem{Muth}{1961}{muth1961Rational}
 Muth, J.~F.  \harvardyearleft 1961\harvardyearright , `Rational expectations
@@ -115,7 +119,7 @@ Shiller, R.~J.  \harvardyearleft 1981\harvardyearright , `Do stock price move
   too much to be justified by subsequent changes in dividends?', {\em American
   Economic Review} {\bf 71}(3),~421--436.
 
-\harvarditem{Shiller}{1984}{shillerFashion}
+\harvarditem{Shiller}{1984}{ShillerFashion}
 Shiller, R.~J.  \harvardyearleft 1984\harvardyearright , `Stock prices and
   social dynamics', {\em Brookings Papers on Economic Activity} {\bf
   Fall},~457--498.
