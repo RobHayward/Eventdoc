@@ -28,152 +28,89 @@
 \date{\today}
 \maketitle
 \begin{abstract}
-An event study is used to assess the views of Keynes and Friedman on speculation. Speculative extremes are ranked by intensity of sentiment and weight of speculative activity. A unique dataset of risk-reversal skew on option prices is used to measure the intensity of speculative sentiment; the weight of positions is based on US regulatory data.  The extremes say little about the future in either case, suggesting that speculation is more than just random noise and supporting the view there is some informational content that is being passed through to the price with speculative activity. 
+  If speculation is just noise, price movements associated with extremes of speuclative sentiment or heavy involvement of speculative activity should be reveversed; if speculation is informed, associated price movement is more likely to be sustained.  A unique set of risk-reversals on currency options is used to measure speculative sentiment and regulatory positions measure speculative activity. An event study shows that extremes do not increase the probability of a price reversal, supoprting the view that speculation is part of the price disovery process.     
 \end{abstract}
 \section*{Introduction}
-There are a range of ideas about the way that speculation can affect financial markets.  Towards one end of this spectrum is the view of  \citet[p. 101]{Keynes1936} in Chapter 12 of \emph{The General Theory} where he identified speculation as a myopic, sentiment-driven activity, dominated by the desire to ``beat the gun'' or  ``outwit the crowd''. Here speculation is a problem that, at its most extreme, will cause booms, reversals and will discourage fundamental, long-term investment. It is noise that does not emerge randomly, but feeds off itself in an evolution of collective sentiment that encourages trends in asset prices.
+Ideas about the way that speculation affects financial market span a broad range.  Towards one end is the Keynesian view that speculation is a myopic, sentiment-driven activity, dominated by the desire to ``beat the gun'' or  ``outwit the crowd'' \citet[p. 101]{Keynes1936}. Speculation is a problem that will cause booms, reversals and will discourage fundamental, long-term investment; It is noise that emerges from the interaction of collective sentiment to encourages trends in asset prices.
 
-Towards the other end of the spectrum, Milton Friedman argued that speculation was a stabilising force, providing liquidity and helping to ensure that markets swiftly find equilibrium. In arguing in favour of flexible exchange rates,  \citet{FriedmanPositive} asserted that successful speculators would be those who managed to correctly buy when prices  were below fundamental value and sell above that price. Therefore, Friedman argued, the speculative process would favour those able to access or utilise information over the uninformed and, through a Darwinian process, informed speculation would dominate.  This view regards speculation as an key lubricant of financial markets as it provides liquidity and facilitates the process of price discovery.   
+Towards the other end of the spectrum, Friedman argued that speculation was a stabilising force, providing liquidity and helping to ensure that markets swiftly find equilibrium. \citet{FriedmanPositive} asserted that successful speculators would be those who managed to correctly buy when prices  were below fundamental value and sell above that price. Therefore, Friedman argued, the speculative process would reward those able to access or utilise information relative to the uninformed and, through a Darwinian process, informed speculation would dominate.  This view regards speculation as an key lubricant of financial markets as it provides liquidity and facilitates the process of price discovery.   
 
-The aim of this paper is to understand more about the nature of speculation by investigating the relationship between both the intensity of speculation and the weight of speculative positions with the movement of prices in the foreign exchange market.   If speculators are uninformed and their activity can be regarded as noise, the most extreme sentiment and the time when speculators have the greatest weight in the market should correspond with the greatest deviation of prices from fundamental value, when reversals are most likely to take place; if speculators are informed prices should follow a random walk after either of these extremes.  
+The aim of this paper is to understand more about the nature of speculation by investigating the relationship between the intensity of speculation and the weight of speculative positions relative to the movement of prices in the foreign exchange market\footnote{The foreign exchange market is utilised because it is the largest and most liquid financial market in the world.  The latest survey taken by the Bank for International Settlements (BIS) in April 2013 estimated average daily turnover at \$5.4trn with average daily spot transactions of \$2.0trn See \citet{BISFX2013}.  The cost of trading in this market, when measured in terms of the size of the bid-ask spread, is extremely low. An analysis by \citet{Steely2013} of the bid-ask spreads for USD-JPY, GBP-USD and EUR-USD for the period January 2001 to 2005 and finds that the average spread for each is 0.342\%, 0.305\% and 0.326\% respectively.  This would be the cost for a round-trip (buying and selling immediately).}.  If speculators are uninformed and their activity can be regarded as noise, the most extreme sentiment and the time when speculators have the greatest weight in the market should correspond with the greatest deviation of prices from fundamental value, when reversals are most likely to take place; if speculators are informed prices should follow a random walk after either of these extremes.  
 
-The foreign exchange market is utilised because it is the largest and most liquid financial market in the world.  The latest survey taken by the Bank for International Settlements (BIS) in April 2013 estimated average daily turnover at \$5.4trn with average daily spot transactions of \$2.0trn See \citet{BISFX2013}.  The cost of trading in this market, when measured in terms of the size of the bid-ask spread, is extremely low. An analysis by \citet{Steely2013} of the bid-ask spreads for USD-JPY, GBP-USD and EUR-USD for the period January 2001 to 2005 and finds that the average spread for each is 0.342\%, 0.305\% and 0.326\% respectively.  This would be the cost for a round-trip (buying and selling immediately). 
-    
-A unique set of option prices are used to identify the intensity of speculative sentiment.  US regulatory positions measure the prominence of speculators in the market. Speculation does not appear to be random, there is momentum to the rise and fall in sentiment and positions.  However, while currency prices co-move with sentiment and positions, there is no informational content from either: knowing  the strength of speculative opinion or the weight of speculative positions does not improve forecasts of future returns. This supports the suggestion that speculative activity has a permanent affect on prices and that is consistent with speculation being part of the process of price discovery. Speculators do not seem to drive prices from fundamental value and their presence seems to help rather than hinder the incorporation of information into prices. 
+This paper contributes to the debate about the nature of speculation in a number of ways. A unique set of option prices are used to identify the intensity of speculative sentiment; an event study method is used to establish the effect of extremes of speulative sentiment and speculative positions; these speculative extremes are compared to a common noise-trader model.  Speculative extrmes do not provide information about the future; the evolution of foreign exchange prices after an extreme can be chracterised as a random walk; this suggests that speculation is part of the process of price discovery.  
 
-\section{Literature}
-\subsection*{Overview}
-  Speculation is an important concept in economics, particular in the area of finance.  However, there is no clear, unambiguous theory of speculation. Speculation plays a key role in three important and related areas: market-microstructure, the rationale for the trading of financial securities and rational expectations. 
+For example, Figure \ref{fig:ES1} show the evolution of a selection of foreign exchange prices after an exrtreme reading of speculative sentiment. Sentiment is measured by an extreme in the price of currency call options relative to the equivalent put.  It is clear that the foreign exchange rate has a contemporaneous movement with the sentiment but that after reading the extreme, there is no clear direction.  The lack of clear direction indicates lack of information.  As such, extreme speuclative positions do presage reversales, indicating that they are not associated with divergence from equilibrium. 
+
+\begin{figure}
+\graphicspath{{../Figures/}}
+\centering
+\includegraphics[scale=0.6]{RRCum16}
+\caption{Event Study:  Extreme (High 99th percentile) Risk Reversal Skew and 16 day event window: Risk reversals are the ratio of implied volatility on calls to the equivalent put; extreme high is the hghest 99th percentile for the whole range, cumulative returns are the sum of log exchange rate returns.  The event day is the day of the extreme risk reversal reading as a proxy for extreme speculative sentiment.  If speculation is uninformed, extremes shoudl be followed by reversals; if specuation is informed, extremes are more likely to be followed by a random walk.}
+\label{fig:ES1}
+\end{figure}
+% This description provides an explanation for the observation from \citet{ShillerVol} that stock prices are more volatile than the underlying earnings information on which valuation should be based. In addition, \citet{Delong1990noise} and \citet{shleifer1997limits} show that constrained horizons can cause noise-trading to limit the ability of informed traders to take advantage of profitable opportunities for fear of further divergence from fundamental value before realignment is achieved.
+
+The nature of speculation is central to many contemporary questions about international financial markets. For example, regulations or taxes that reduce the amount of speculation may be beneficial if they limit risk-taking and encourage more long-term attitudes towards investment.  If speculation is largely uninformed it will add to the level of noise and maker it even harder for informed-traders to overcome uncertainty and apply fundamental information about long-term value. It will increase the tendency towards activity that is focused on the short-term.  However, if speculation is informed and part of the process of price discovery, regulatory measures may reduce liquidity and undermine the pricess of price discovery. Increased volatilty, heightened risk and reduced transparency together with other costs may provide an countervailing force. 
   
-One key element of the microstructure literature involves distinguishing between uninformed or noise-traders and those who have information. The \citet{Kyle1985Continuous} model has market-makers receiving orders from the informed and the uninformed.  On the assumption that the uniformed arrive in a random fashion without any reason to trade, the weight of orders implies something about the activity of the informed and causes prices to change in the process of price discovery.  The bid-ask spread is the payment that the market-maker receives in return for taking the risk of meeting an informed trader.  Ultimately, the uninformed traders make payments to the informed traders with the market-makers taking a cut for the risk and the provision of exchange.  See also \citet{glosten1985bid}.  
+The rest of the paper proceeds as follows:  Section Two analyses the distinction between informed and uninformed speuclators; Section Three discusses the measurement of speculation and the testing of extreme positions; Section Four reviews the evidence; Section Five concludes with a discussion of policy implications. 
 
-In the \emph{microstructure} literature, the term noise-trader is often interchanged with \emph{liquidity-trader}.  There may be institutional and psychological reasons for the lack of attention to fundamental information. Nonetheless, liquidity tends to refer to institutional explanations for trading without reference to fundamental value. This may mean that economic agents just execute customer orders at the current price or it may be that they buy and sell with reference to a benchmark index or to fulfil a hedging strategy. Noise is more psychological. 
-
-\citet[p. 1]{GortonNoise} categorise noise-traders as all those trading in markets for ``non-information-based reasons''. In this case, uninformed speculation provides a rational and an opportunity for the trading of financial securities. There must be different opinions.  Why will traders be prepared to pay the cost of acquiring information if they are unable to take advantage of that information? With speculative noise-traders, prepared to take the other side of the transaction, the informed can take advantage of their information.  This creates a justification for acquiring information. Speculative noise-traders can therefore create a gap between the price and the fundamental value that will encourage informed traders to pay the cost of acquiring information.   \citet[p.529]{BlackNoise} suggested that this combination was essential to the smooth function of financial markets. It is ``the arbitrary element in expectations''. Therefore, noise makes financial markets possible but imperfect: the more noise-traders that there are, the more liquidity and the easier it is to trade; the more noise-traders, the higher the level of inefficiency in the market and the more likely that price will be driven from fundamental value. This begs the question: are speculators trading on noise or are they informed?  
-
-  Speculation is also an important part of the argument for why prices should tend towards a level that consistent with \emph{the rational expectations equilibrium} (RER). This is the level that is consistent with rational expectations.  In the original version of rational expectations,  \citet{muth1961Rational} uses commodity speculation as the means by which prices are driven towards the level where expectations are model-consistent. These are of Friedman-type speculators as they base their expectations on their knowledge of the underlying model and they are the mechanism through which equilibrium is achieved. 
-
-However, though equating noise and noise-trading as a random variable may be a construction that is useful for modelling and it may be justified in analysis of broader themes of microstructure and levels of market efficiency, it may also be an over-simplification that is inappropriate when looking for more understanding of speculation itself.  Institutional and psychological explanations for noise-trading frequently suggest that there are endogenous non-random elements to speculative activity.
-
-  The institutional explanations are associated with the allocation of credit for investment and trading purposes:  as asset values decline exchanges, banks and other providers of liquidity require larger margins and deeper haircuts; investors liquidate their fund holdings; the attraction of hedging increases.  See \citet{BrunnermeierLiquidity} and \citet{Gorton} for an overview of the institutional literature.  Psychological explanations revolve around the common panic, the group-thinking and the tendency to read private information into the actions of other investors: the so-called \emph{wisdom of crowds} depends on independent evaluation but as Keynes noted in his discussion of the \emph{beauty contest}, it is generally more important to identify what other investors will believe than to form an independent view of the actual underlying, fundamental value \citet[p.101]{Keynes1936}.
-
-\subsection{Empirical work}
-Empirical assessment of speculation has been limited by the scarcity of data.  It is not very easy to distinguish between speculators and other types of investors.  It is even harder to distinguish those that may be noise-traders from those assumed to be informed.  One approach has been to assume that noise-traders utilise simple investment strategies and to use tests of these strategies as a means of testing speculation.  For example speculation can be identified with momentum trading. It is also possible to assume that certain investors, such as investment banks and hedge funds, are informed while other trade without information. The latter group may include day-traders or private individuals.  
-It has also been suggested that speculative techniques can change over time.  For example, \citet{ShillerFashion} discusses the use of fashionable techniques or fads in investment.  In this way, speculation can be be associated with sentiment and measures of sentiment are then used as ways of measuring speculation. 
-
-%Noise stragegies may be successful for a while.  Momentum trades tend to be successful for certain ties.  Also discussion the literature on heterogeneous traders, another way that the trading securities is explained, has very frequently used noise-traders as trend-chasers or followers of technical analysis.  These models (see for example brock and hommes [1998]; lux [1995]; lux and marchesi [2000]) investigate bubbles and crashes, and feature fundamental traders versus noise traders. 
-
-\subsection{Why this is important}
-The Keynesian view of speculation is that it is an addition to market noise that makes it even harder for informed-traders to overcome uncertainty and apply fundamental information about long-term value. As such, it exacerbates the tendency towards putting too much emphasis on the immediate and works against longer-term and strategic thinking.  This description provides an explanation for the observation from \citet{ShillerVol} that stock prices are more volatile than the underlying earnings information on which valuation should be based. In addition, \citet{Delong1990noise} and \citet{shleifer1997limits} show that constrained horizons can cause noise-trading to limit the ability of informed traders to take advantage of profitable opportunities for fear of further divergence from fundamental value before realignment is achieved.
-
-The nature of speculation and the role of noise-traders has become increasingly important since the global financial crisis (GFC).  There are a number of contemporary questions where the role and nature of speculation is at the centre of the debate.  For example, regulations or taxes that reduce the amount of speculation have generally been considered to be beneficial as they limit risk-taking and encourage more long-term attitudes towards investment.  However, where these measures reduce liquidity, higher risk and an increase in other costs may provide an countervailing force. 
+\section{Informed and uninformed traders}
+Speculation plays an  important role in the areas of market-microstructure, the rationale for the trading of financial securities and rational expectations. However, there is no clear, unambiguous theory of speculation.  While speculation may be viwed as being informed or uninformed, those trading without information are often categorised as being either \emph{noise-traders} or \emph{liquidity traders}.   
   
-The debate about a tax on financial transactions, initiated by \citet{TobinTax} and now called the \emph{the Tobin tax}, has been intended to reduce speculation.  The surge in commodities prices that was seen prior to the GFC was seen to be partially the consequence of increased speculation in commodities and the creation of exchange traded funds (ETF) focusing on commodities markets.  The argument for a tax on financial transactions depends on the idea that speculators will drive the price away from its fundamental value.   
+Noise-trading is associated with psychogical biases and restricted information while liquidity-trading is about institutional constraints.  Therefore, noise is associated with behavioural issues, over-confidence and the use of irrational or purely fashionable investment tools. See \citet{DeBondtAnalysts} for an analysis of over-reaction and the \emph{represetntativeness heuristic}, \citet{OdeanOC} for a study of over-confidence and  \citet{ShillerFashion} for an assessment of investment fads.  Market-participants do not make decisions independently of those made by others. Information is inferred from the activities of others. \citet[p.101]{Keynes1936} said investment decisions could be based on the expecttions of others' valuations.  institutional constraints may mean that economic agents just execute customer orders at the current price or it may be that they buy and sell with reference to a benchmark index or to fulfil a hedging strategy. The institutional explanations are associated with the allocation of credit for investment and trading purposes:  as asset values decline exchanges, banks and other providers of liquidity require larger margins and deeper haircuts; investors liquidate their fund holdings; the attraction of hedging increases.  See \citet{BrunnermeierLiquidity} and \citet{Gorton} for some discussion of the way that margin-calls and collaeral constraints can force investment decisions.  However, the terms are not fixed and  \citet[p. 1]{GortonNoise} categorise noise-traders as all those trading in markets for ``non-information-based reasons''. 
 
-%volcker rule?
+An important part of microstructure research is the distinction between informed and uninformed traders.  The focus of the \citet{Kyle1985Continuous} model is a market-maker receiving orders from the informed and the uninformed.  On the assumption that uniformed orders arrive in a random fashion, the weight of orders implies something about the knowledge of the informed and should led to adjustment of the bid-ask spread as part of the process of price discovery.  This bid-ask spread is the payment that the market-maker receives from the uninformed in return for taking the risk of meeting an informed trader.  See also \citet{glosten1985bid}.  
 
-\section{Methodology}
-The aim of this study is to test whether the noise-trader model provides an appropriate explanation for speculator activity in the foreign exchange market.  The analysis will involve three steps:  assessment of the price implication of the noise-trader model;  measurement of speculative activity in the foreign exchange market; finally, assessment of whether extreme speculative market activity is consistent with the underlying model that is used.  If the speculative activity in the foreign exchange market produces results that are like the noise-trader model, it can be said that speculation is closer to the Keynesian view than that of Friedman.  
+As such, Uninformed activity provides a rationale and the opportunity for trading. Unless there is a difference of opinion about value, there is no reason to trade. Uninformed speculation can create space between price and fundamental value that can be exploited by informed speculators.  Indeed, this space can encourage informed traders to pay the cost of acquiring information.  See, for example \citet{Grossman1980Impossibility}. 
 
-The \citet{Delong1990noise} noise-trader model used in this study. This is a derivative of the \citet{Samuelson1958} overlapping generations model with two-period agents making a portfolio choice between two assets: a safe asset $(s)$ which pays a set dividend $(d)$ and is in perfectly elastic supply; a risky asset $(u)$ which also pays the same dividend but is not in elastic supply.  There are two types of investor: sophisticated traders $(i)$ who know the fundamental value of the risky assets and noise-traders $(n)$ who misperceive the fundamental value.  In the absence of noise-traders, the assets are substitutes.  Each trader chooses their portfolio in the first period $(t)$ to maximise their utility on the basis of their belief about the price of the unsafe asset in the second period $(t + 1)$.  The representative noise-trader mistakes the price of the risky asset by a random variable 
+\citet[p.529]{BlackNoise} suggested that this interaction of informed and uninformed activity was essential to the smooth functioning of financial markets. Noise, he argued, was the  ``the arbitrary element in expectations''. Therefore, noise makes financial markets possible but imperfect: the more noise-traders that there are, the more liquidity and the easier it is to trade; the more noise-traders, the higher the level of inefficiency in the market and the more likely that price will be driven from fundamental value. 
 
-\begin{equation}
-\rho_t \sim N(\rho^*, \sigma_{\rho^2})
-\end{equation}
+\citet{EasleyPIN} use informaton as an explanation for the effect of large orders on stock prices.  The \emph{order effect} may be a consequence of the need to adjust inventories when a market-maker recieves a large order; it may also be a function of the market-maker knowledge that large orders are more likely to informed traders seeking to take advantage of their informational advantage.  \citet{EasleyPIN2} develop a technique to estimate the probability that trading is informed.  The find that the high liquidity stocks have the highest level of information and the most frequent arrival rate of informed traders but that this is more than offset by the high quantity of uninformed traders.  Low liquidity stock, by contrast, have fewer information events but informed traders have a much larger effect on prices. 
 
-Maximising utility with respect to holdings of the sage and risky assets for the informed and uninformed traders and iterating backward to solve for the current value,  the price becomes the discounted value of the future dividends, the expected capital gain and the general misperception of noise-traders less risk.  
+Informed speculation is also used as the theoetical justification for the tendency of Rational Expectations Equilibrium (REE) to prevail in the long-run.  Those economic agents able to determine the fundamental value or discern the underlying economic model will be able to speculate or sell forecasts that will tend to drive prices towards the equilibrium \citet{muth1961Rational}.  This tends to leave uninformed speculation as a pure noise that can be characterlised as white-noise random variable. While this construction may be justified for the analysis of microstructure and market efficiency, it is an over-simplification that is inappropriate when seeking more understanding of speculation itself.  Institutional and psychological explanations for noise-trading frequently suggest that there are endogenous non-random elements to speculative activity.
 
-\begin{equation}
-p_t = 1 + \frac{\mu(\rho_t - \rho^*)}{1 + r} + \frac{ \mu \rho^*}{r} - \frac{2 \gamma}{r}\ \big (_t\sigma^2_{p,t+1} \big )
-\label{eq:NP1}
-\end{equation} 
-
-The deviation from the true fundamental value of unity is a result of the discounted value of the noise-traders' misperception of the price $(p_t - \rho^*)$, multiplied by the weight of noise-traders in the total $(\mu)$ plus a perpetuity of the average noise-trader misperception $(\frac{ \mu \rho^*}{r} )$, adjusted for the risk.   This risk is a function of the volatility of the price which,  from Equation \ref{eq:NP1} is a consequence of the variability of the misperception of speculative noise-traders.   All but the second term in equation \ref{eq:NP1} are constants, and if the variance of the price one period ahead  is equal to the variance of the misperception, 
-
-\begin{equation} 
- _t\sigma^2_{p,t+1} = \frac{\mu^2 \sigma_{\rho}^2}{1+r^2}  
-\end{equation}
-
-the final price equation becomes:
-
-\begin{equation}
+However, a large proportion of uninformed traders in the market can undermine this process.  \citet{Delong1990noise} and \citet{shleifer1997limits} have presented models where \emph{noise-trader risk} can prevent the arbitrate of informed speculators from driving prices back towards the fundamental value.  The risk that noise-traders will drive prices even further away from equilibrium before the convegence can limit the activity of informed speculators when they are risk averse.\footnote{This three-period, overlapping generation model with informed and uininformed traders has a price equation \begin{equation}
 p_t = 1 + \frac{\mu(\rho_t - \rho^*)}{1 + r} + \frac{ \mu \rho^*}{r} - \frac{2 \gamma \mu^2 \sigma_{\rho}^2}{r(1 + r^2)}.
 \label{eq:NP2}
 \end{equation} 
- 
+ where $p_t$ is the price; $\mu$ is the share of uninformed traders; $\rho$ is the price mis-perception of the uninformed traders; $\gamma$ is the level of risk aversion; $\sigma^2_{p,t+1}$ is the variance of the misperception.}   
 
-The following four effects are noted by \citet[pp. 14-15]{Delong1990noise}:  the \emph{Friedman Effect}, as informed speculators move prices back towards fundamental value; \emph{Price Pressure} is the \emph{noise-trader risk} as the speculative noise-traders drive prices towards their misperceived value; \emph{Hold More} as noise-traders misperceive the value of the risky asset and tend to hold more of it; \emph{Create Space} is the difference between noise-trader perception and the actual value, it creates the opportunity for informed traders to profit from their information. In this model, the more numerous the noise-traders, the more volatile prices.  
+The De-Long noise-trader model also provides a useful benchmark against which to assess the activity of speculators. The following four effects are noted by \citet[pp. 14-15]{Delong1990noise}:  the \emph{Friedman Effect}, as informed speculators move prices back towards fundamental value; \emph{Price Pressure} is the \emph{noise-trader risk} as the speculative noise-traders drive prices towards their misperceived value; \emph{Hold More} as noise-traders misperceive the value of the risky asset and tend to hold more of it; \emph{Create Space} is the difference between noise-trader perception and the actual value, it creates the opportunity for informed traders to profit from their information. In this model, the more numerous the noise-traders, the more volatile prices.  
 
-The Friedman-effect and the Price-pressure are the effects that are studied here.  Their combination suggests that when the weight of noise-traders is high or the times when they have particularly strong opinions will tend to be those when there is the greatest risk of reversal.  The hold-more effect suggests that the weight of speculative involvement in the market will tend to increase as a trend.  Create-space effect would suggest that when the weight of noise-traders is high and extreme, there is greater incentive and opportunity for the informed to take advantage of the divergence between fundamental value and price. 
+The Friedman-effect is the activity of informed speulators.  They take advantage of the space that has been created by the price pressure of the uninformed traders to profit from this mis-pricing.  Uniformed traders tend to hold more when their opinions are strong.  This is the noise-trader risk that can prevent informed traders from fulfuillig their arbitrage role. If uninformed traders are very prominent or have strong opinions, prices should show the greatest divergence from fundamental value and the risk of a reversal shoould be at its greatest.    
 
-\subsection{The implications of the noise-trader model}
-There are two parameters from the noise-trader price equation \ref{eq:NP2} that can be used to measure the amount of speculation:  the price misperception $(\rho)$ and the weight of noise-traders in the market $(\mu)$.  The aim of this section is to  identify the returns that are implied by the noise-trader model when either the intensity of the misperception or the weight of noise-traders is increased to extreme levels so that this can be used as a benchmark against which foreign exchange market activity can be judged. 
+\subsection{Empirical work}
+Empirical assessment of speculation has been limited by the scarcity of data.  It is not very easy to distinguish between speculators and other types of investors.  It is even harder to distinguish between the informed and uninformed.  One approach has been to assume that noise-traders utilise simple investment strategies and to use tests of these strategies as a means of testing speculation.  Common strategies that have been used are momentum (ref), contrarian (ref) and carry (ref).   It is also possible to assume that certain investors usually have more information than others.  For example, hedge funds, investment banks and other professionals can be assuemd to be informed while retail or day traders may be uninformed. 
 
-To understand what the noise-trader model of speculative behaviour means for foreign exchange rates, a \emph{Monte Carlo} simulation is carried out with a variety of misperception-perceptions and noise-trader weights.  Two time series are created.  The first series is based on a random noise-trade misperception, $(\rho^*)$.  This is called the Misperception Model (MPM). The second is based on a random weight of noise-traders $(\mu)$ and is called the Random Weight Model (RWM).   The simulation creates a 1000 period price series from Equation \ref{eq:NP2}. The dividend paid on the risky asset $(r)$ is posted at 10\%; the risk-aversion parameter $(\gamma)$ is assumed to be 0.3 (in line with that suggested in \citet[p. 127]{FrobesBehaviour}); starting from a price of 100, the average noise-trader misconception $(p^*)$ is a random variable in the first simulation with a mean of 4 and a variance $(\sigma_{\rho^*}^2)$ of 2, and has a fixed value of 4 in the second simulation; the weight of noise-traders $(\mu)$ is 50\% in the first case but is modelled as a two-period moving average of a normal random variable centred at 50\% with a standard deviation of 20\% and equally weighted average of its previous value (starting at 50\%) to allow smooth adjustment, in the second simulation.   
-% it is possible to have other specifications. For example, the noise-traders oculd become more prominent if their strategy is more successful, 
 
-A 1000 period prices simulation is created for each model and the returns for these series are calculated as the log change in price.  Those periods when misperception-perception or the weight of speculators is \emph{extreme} are identified as those that are at or above the ninety-fifth percentile.  These extremes are the \emph{event} for an event study. Descriptive statistics for the whole series of returns and for those when either the extent of their misperception or the weight of noise-traders is extreme are presented in Table \ref{tabref:MC1}.  The process is then repeated for one thousand simulations of each model so that confidence intervals can be established for the estimates of the descriptive statistics.        
+%It has also been suggested that speculative techniques can change over time.  For example, \citet{ShillerFashion} discusses the use of fashionable techniques or fads in investment.  In this way, speculation can be be associated with sentiment and measures of sentiment are then used as ways of measuring speculation. 
 
-\subsection{The results of simulation}
-The results of the simulation are recorded in Table \ref{tabref:MC1}.  It shows that the mean return to an investment strategy in the whole of the sample is very close to zero.  However, for each of the extreme readings, there are large negative returns to follow. This is consistent with the structure of the model: noise-traders drive price above intrinsic value and subsequent returns will be negative; the more extreme the misperception or the weight of uninformed speculative noise-traders in the market, the greater the negative return that is likely to be recorded.  
+%Noise stragegies may be successful for a while.  Momentum trades tend to be successful for certain ties.  Also discssion the literature on heterogeneous traders, another way that the trading securities is explained, has very frequently used noise-traders as trend-chasers or followers of technical analysis.  These models (see for example brock and hommes [1998]; lux [1995]; lux and marchesi [2000]) investigate bubbles and crashes, and feature fundamental traders versus noise traders. 
+\citet{EasleyPIN2} propose a model to try to measure informed market activity based on their assertion that the bid-ask spread is a function of the level of informed trading.  As informed traders are most likely to want to take advantage of their informational advantage, large orders are assumed to be informed.\footnote{With market-makers adopting Bayesian reasoning to update their fundamental valuation by using order flow to estimate the probability that there has been an information event and if there has whether it is good news or bad news, the authors seek to operationalise the following model:
+\begin{subequations}
+\begin{equation}
+b(t) = E[V_i|t] - \frac{\mu P_b(t)}{\varepsilon + \mu P_b(t)}(E[V-t|-\underline{V}])
+\end{equation}
+\begin{equation}
+a(t) = E[V_i|t] + \frac{\mu P_g(t)}{\varepsilon + \mu P_g(t)}(\overline{V}E+ [V-t|])
+\end{equation}
+\end{subequations}
+  where $b(t)$ is the bid price at time $t$; $V$ is the value of the security; $\mu$ is the share of informed traders in the market; $P_g(t)$ is the probability that there has been some good news and $P_b(t)$ is the probability that there has been some bad news; $\varepsilon$ is the share of uninformed traders in the market; $\underline{V}$ is the value if there is bad news and $\overline{V}$ is the value if there is good news.} 
+  
+However, identifying large orders and making an assessment of the level of informed trading based on that is much harder to achieve in an over-the-counter market like foreign exchange. While electronic order books have become more widely used in recent years, much of the activity still takes place through bilateral agreements.  Information about the nature of transactions including size and origin of orders is not widely available\footnote{\citet{Lyons1995Microstructure} and \citet{Evans2002Order} have used the initiation of orders as an explanatory variable in an equation to explain the evolution of major exchange rates.  They find that $\$$ 1 billion of net US dollar purchase moves the deutsche mark price of the US unit by 0.5 percent. They argue that the orders cystalise a range of information that is used to value currencies.}    \citet{LeeandReady} seek to use price action to infer the nature of the order that has been placed into the market.  Their tick test has four classifications: the uptic, the downtick, the zero-uptick and the zero-downtick. A trade is an uptick if the price is higher than the previous trade.  If the price is the same as the previous trade, if the previous trade was classified as an uptick, this trade is a zero-uptick.  
+\section{Methodology}
+The aim of this study is to assess whether speculation in the foreign exchange market is informed or uninformed. Speculation must be identified and then extreme speculation will then be compared with what would be expected if it were informed or uninformed.  If informed and part of the price-discovery process, extreme speculation would be a function of perceived divergence from equilibrium or new information.  The following price performance should be a random walk.  If speculation is uninformed, extremes should cause a divergence from fundamental value and a price reversal should be anticiapted.     
 
-\begin{table}[h!]
-\begin{threeparttable}
-\caption{Results of the Monte Carlo Simulation of the Noise-Trader Model}
-\begin{tabular}{p{4cm} | r r r r}
- \label{tabref:MC1}
-                            & Base Case  & Extreme (MPM) & Extreme (RWM) \\
-  \hline
-\hline
-Mean                     & -0.00 & -0.90*   & -0.49 \\
-Standard Deviation  & 0.98 &  0.49*     &  0.42*\\
-Skew                      &  -0.07 &  -0.16   &  -0.78*\\
-Kurtosis                  &  -0.14 &  -0.38    &  -0.35\\
-Number                 &  1000        &   50        & 50\\
-
-\end{tabular}
-\begin{tablenotes}
-\small
-\item Descriptive statistics for the De Long Noise-Trader model \citet{Delong1990noise}.  The Base Case measures the benchmark as returns from prices generated by Equation \ref{eq:NP2} for the whole sample.   The MPM measures returns after a period of extreme sentiment when the misperception of noise-traders ($\rho$) is equal to or above the 95th percentile of all the misperceptions; the RMW measures the returns following a recording of extreme weight of noise-traders ($\mu$) is equal to or above the 95th percentile of all noise-trader realisations.   The asterisk denotes significantly different from zero at the 95th confidence interval.    
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
+Returning to the \citet[pp. 14-15]{Delong1990noise} model summarised by Equation \ref{eq:NP2}, there are two parameters that can be used to measure speculation:  the price misperception $(\rho)$ and the weight of noise-traders in the market $(\mu)$.  If either of these reach an extreme, prices should be expected to reverse\footnote{See \citet{Hayward2013} for full details of simulations of this model.}
 
 \subsection{Measuring the intensity of speculative sentiment}
 The measurement of speculative intensity must identify how strongly speculators believe that the market will move in a particular direction. In the absence of a daily survey of speculators, this study uses \emph{risk-reversal skew} as an objective measure of speculative sentiment rather than surveys of opinion.%\footnote{There are a number of surveys of investor opinion that are regularly conducted by financial service information companies.  However, these are disparate and, in many cases, unsystematic, and it is not clear whether they measure speculative sentiment or investor opinion more generally.   The Wall Street Journal runs an annual survey of investor opinion, but this is focused mostly on US equities.  The \emph{Economist} magazine also solicits opinion, but in a relatively unstructured and \emph{ad hoc} fashion.  In the foreign exchange market, there is a broad set of market forecasts that was collected by the financial services company \emph{MMS International} (formerly Money Market Services) which polled a broad range of financial market participants on key exchange rates for one and four week forecast horizons. Frankel and Froot found that the median forecast from the MMS survey exhibited trend-following behaviour at the one to three week horizon while there is mean-reversion beyond that point.  Frankel and Froot also assess the 'Financial Report' that has been produced by \emph{The Economist} magazine and \emph{Currency Forecasters Digest} and find a wide dispersion of opinion and express some concern about the aggregation of such divergent forecasters \citet gc{FrootFrankelFDB} and \citep{FrankelFroot1987}.}
+
 Risk-reversal skew is the relative price of currency put and call options for the same strike price.  The \emph{Put-Call-Parity} in the  \citet{Black1973Options} option pricing model assumes that these will be the same, in practice they are not\footnote{While the Black-Scholes model is the basis for valuing options, where the price of a non-dividend paying stock trades at a discount to the forward rate equal to the risk free rate, the forward rate in a currency option is determined by the relative interest rate differential between the two currencies.   The \citet{GarmanKohlhagan} adjustment that accounts for the difference in interest payments on the two currencies is used.   The spot discount is determined therefore by the relative interest rate differential for the appropriate maturity.   This model allows the market practice of pricing options from the volatility implied by the model.  In other words, the Garman-Kohlhagan is used to extract the volatility that is implied by a specific option price given the strike and other parameters}. 
  
 This study uses a unique dataset of \emph{risk-reversals} for eleven major currency pairs.  It appears that this is the only period for which the data currently exist.  The risk-reversal data is very difficult to obtain in an over-the-counter market like foreign exchange where there is no centralised exchange to record and collect information, generally being the property of quoting institutions.  The risk-reversals are the average prices quoted at 10:00 GMT by major banks on the Thomson-Reuters composite option pages (OPT1)  for the period between January 2 1996 and September 6 2002.  The risk-reversals are the spread of implied volatility for a 1 month 25 delta at-the-money call option relative to the equivalent put.  A call option is the right to buy and a put option is the right to sell.  The delta of an option measures the effect of a change in the spot price on the value of the option.  This can range from zero for deeply out-of-the-money options to unity for deeply in the money strikes.  The at-the-money delta is 50 as there is a 50:50 chance of the option being exercised.  The benchmark for option risk-reversals is 25 delta.  This is a measure of how far the option is out of the money or how far the strike is from the forward rate.  
 
 If the exchange rate trajectory is expected to follow a random walk with drift towards the 1 month forward, implied volatility on the put and the call for the same delta should be equal.  Any deviation from this equivalence is an indication that a deviation from the random walk with drift is implied in the market price of options.\footnote{If the risk-reversal for a 1-month USD/CAD is quoted at 0.15-0.28\% and the implied volatility is 8.50\%, the market-maker would be willing to buy the 1-month 25 delta USD-put-CAD-call at 8.65\% and sell the USD-call-CAD-put at 8.50\%.  The dealer pays 0.15\%.  Alternatively, the dealer would sell a 25 delta call at 8.78\% and buy the USD-call-CAD-put at 8.50\%, earning 0.28\% \citet{Global}. }  Therefore, the relationship between implied volatility for calls and implied volatilities for puts for the same delta and maturity is an indication of how much more expensive calls are relative to the equivalent put or as the market bias towards puts over calls and as an indication of market sentiment.  The larger the absolute level of the risk-reversal skew, the greater the relative price and, in equilibrium, the more intense the belief, expressed through the action of market participants or in the inventory of market-makers, that there will be a deviation from the forward rate.   If sentiment is based   on noise rather than information, extremes should presage a sharp reversal; if speculative sentiment is informed, this is part of the price discovery process and extremes may be followed by a random walk.  
-  
-Table \ref{tabref:DS1} in Appendix \ref{apref:1} shows descriptive statistics for the exchange rate data used in the study.  There are daily data for the period between January 1996 and September 2002.  This is the period for which risk-reversal data are available.  The series are of sightly different lengths as there are some gaps in the risk reversal and exchange rate data as a result of holidays and market closures.  From the raw data continuously compounded returns are calculated and multiplied by 100.  The first thing of note is that the mean return does not appear to be statistically different from zero.  This is what would be expected if, as has been identified in many studies, exchange rates follow something close to a random walk. 
-\begin{sidewaystable}
-\begin{threeparttable}
-\caption{Descriptive Statistics for Risk Reversals: 2 January 1996 to 6 September 2002}
-\begin{tabular}{l | r r  r r r r r r r r}
-  \hline
- Statistic &  AUD & EURGBP & EURSEK & GBP & CHF & EURCHF & EURJPY & EUR & CAD & JPY \\
- \hline
-Number & 1702 & 1697 & 1719 & 1691 & 1374 & 1339 & 1697 & 1692 & 1701 & 1697 \\ 
-  Mean & -0.37 & 0.15 & 0.71 & -0.08 & -0.28 & -0.38 & -0.48 & 0.19 & 0.12 & -0.74 \\ 
-  Median & -0.30 & 0.10 & 0.80 & -0.10 & -0.15 & -0.30 & -0.10 & 0.10 & 0.15 & -0.55 \\ 
-  Standard Deviation & 0.38 & 0.37 & 0.51 & 0.33 & 0.49 & 0.36 & 1.02 & 0.49 & 0.25 & 1.02 \\ 
- Max & 0.45 & 1.72 & 1.90 & 1.00 & 1.05 & 0.50 & 1.70 & 2.05 & 1.45 & 2.05 \\ 
- Min & -1.70 & -0.80 & -0.30 & -1.35 & -2.05 & -1.80 & -4.03 & -1.15 & -0.65 & -4.00 \\ 
- Skewness & -0.50* & 1.27* & -0.23* & 0.33* & -0.79* & -0.58* & -0.93* & 0.68* & 0.23* & -0.51* \\ 
-  Kurtosis & 0.02 & 2.29* & -1.67 & 0.72 & 0.69 & 0.19 & 0.15 & 0.96 & 1.83 & -0.03 \\ 
-      \hline
- \label{tabref:DS2}
-\end{tabular}
-\begin{tablenotes}
-\small
-\item Daily risk reversal skew.  Risk reversal is the premium of implied volatility for calls relative to the equivalent put (equal distance to the strike price, 25 delta in this case).  A figure above zero means that calls are more expensive (in volatility and price terms) than puts.  A figure below zero means that puts are more expensive. The asterisk (*) means that the estimate is significant at the 5\% level using t-statistics for the mean and the standard error of skew and standard error of excess-kurtosis respectively.   These are calculated as $SES = \sqrt{\frac{6n(n-1)}{(n-2)(N+1)(N+3)}}$ and $SEK = \sqrt{\frac{n^2-1}{(n-3)(N+5)}}$, with the assumption that this estimate is distributed normally, the skew or kurtosis is considered significant if it is more than two standard errors from zero.
-\end{tablenotes}
-\end{threeparttable}
-\end{sidewaystable}
-
-Table \ref{tabref:DS2} gives the descriptive statistics for the risk-reversal data.   For a neutral risk-reversal, a reading of zero, there would be no price preference for calls or puts for the same delta.  The figures show that, in contrast to the average returns, there are often average skews that are different from zero.  The most significant of these are the positive bias for EUR-GBP and a negative bias for USD-JPY.  The latter may be related to hedging activity by Japanese exporters.  While this could suggest that implied volatility is an imperfect measure of speculative activity, note that extreme readings are based on quantiles of the distribution and therefore a discrete adjustment of this distribution to reflect the hedging power should not change the timing of signals measured by extremes. 
 
 \subsection{Measuring the proportion of speculators}
 Recording speculative activity in an over-the-counter market like foreign exchange is extremely difficult.  However, there are some exchange-traded currency derivative markets in the US, and participants in these markets are required to report their positions to the US regulators.  The Commodity Futures Trading Commission (CFTC) was set up by Congress in 1974 to regulate commodity future and options markets. The CFTC collect weekly information about the open positions held by private entities in the US derivative markets.   A sub-set of this information is released to the public each week as the \emph{Commitment of Traders Report} (CoT).  The weekly release has been in place since September 30, 1992.  Before that the data were released every two weeks.  The CoT is released each Friday and details the positions outstanding the previous Tuesday.  See \citet{cot}.
@@ -183,32 +120,6 @@ The CFTC require traders to categorise themselves as being either commercial (C)
 The data used run from September 30 1998 when the data started to be released on a weekly basis and continue up to December 31 2008.  The Euro data runs from March 3 1998 to December 31 2008.  There are two gaps in the Swiss Franc data for September 14 2004 and September 21 2004.  The absence of these data seems to be a result of problems with the CFTC database.  The contracts are for EUR 100,000; GBP 62,500; JPY 12,500,000; CHF 100,000 and CAD 100,000.  
 
 Table \ref{tabref:DS4} shows the descriptive statistics for the two measures of speculative sentiment.  The first (S1) is measured as the net non-commercial long and non-commercial short proportionate to the sum of non-commercial positions long and short positions; (S2) is measured as the net non-commercial long and spreading positions proportionate to open interest.  The first captures directional speculation and, as can be seen from a number of minimums, this can reach 100\%.  The second records the weight of speculation relative to everything else in the market.  The former is more sensitive, as can be seen by the range and the standard deviation; the second is usually above zero because there are always some spreading positions that seek to take advantage of calendar spreads and other strategies.    
-
-\begin{sidewaystable}
-\begin{threeparttable}
-\caption{Descriptive Statistics for S1 (Speculative Sentiment) and S2 (Speculative Weight): 30 September 1998 to 31 December 2008}
-\begin{tabular}{l | r r r r r r r  r r r }
-  \hline
- Statistic &  \multicolumn{2}{c}{EUR} & \multicolumn{2}{c}{JPY} & \multicolumn{2}{c}{GBP} & \multicolumn{2}{c}{CHF} & \multicolumn{2}{c}{CAD}  \\
- & S1 & S2 & S1 & S2 & S1 & S2 & S1 & S2 & S1 & S2 \\  
-\hline
-Number & 522 &  522 & 849 & 849 & 849 & 849 & 847 & 847 & 849 & 849\\
-Mean &  31.31 & 43.43 & -23.90 & 44.21 & 2.76 & 41.68 & -21.14 & 46.13 & 6.68 & 41.23\\
-Median & 42.75 & 39.56 & -33.30 & 43.56 & 11.15 & 38.88 & -37.32 & 42.88 & 7.44 & 39.81\\
-Standard deviation  & 41.94 & 16.13 & 51.49 & 12.17 & 60.59 & 16.46 & 60.76 & 15.73 & 55.26 & 15.33\\
-Max & 95.67 & 86.06 & 87.43 & 84.50 & 96.15 & 89.45 & 100.00 & 92.49 & 100.00 & 86.63\\
-Min &  -100.00 & 11.15 & -99.83 & 12.88 & -100.00 & 9.10 & -100.00 & 14.61 & -90.08 & 11.89\\
-Skew  & -0.88* & 0.55* & 0.33* & 0.57* & -0.17 & 0.76* & 0.45* & 0.65* & 0.02 & 0.50*\\
-Kurtosis & 0.18 & -0.57 & -1.14 & 0.64 & -1.45 & 0.15 & -1.25 & -0.15 & -1.35 & -0.28\\
-\hline
- \label{tabref:DS4}
-\end{tabular}
-\begin{tablenotes}
-\small
-\item S1 is the first sentiment indicator, calculated as ratio of net non-commercial long less non-commercial short to the sum of non-commercial long and short positions multiplied by one hundred.  S2 is the second sentiment indicators, calculated as the ratio of net non-commercial long to net non-commercial short plus spreading to open interest.   An asterisk (*) means that the estimate is significantly different from zero at the 5\% level using t-statistics for the mean and the standard error of skew and standard error of excess-kurtosis respectively.  These are calculated as $SES = \sqrt{\frac{6n(n-1)}{(n-2)(N+1)(N+3)}}$ and $SEK = \sqrt{\frac{n^2-1}{(n-3)(N+5)}}$, with the assumption that this estimate is distributed normally, the skew or kurtosis is considered significant if it is more than two standard errors from zero.
-\end{tablenotes}
-\end{threeparttable}
-\end{sidewaystable}
 
 \subsection{Analysis of events and abnormal returns}
 The aim of the study is to assess the effect of extreme speculative positions on future returns to ascertain the informational content of these extremes.  Therefore, the events that will be used to assess abnormal returns are the extreme readings on sentiment and the extreme presence of speculators.   Any reading above the ninety-ninth percentile or below the first percentile is deemed to be extreme.  For the risk reversal skew, as a secondary test, a reading above the ninety-fifth and below the fifth percentile is also established as an event. The  R package \emph{eventstudies} \citet{eventstudies} was used to manage the data.  The cumulative abnormal returns for the whole of the event window (CARW) and the cumulative abnormal returns for after the event (CARA) were recorded.  These cumulations are just the summation of the continuously compounded returns over the appropriate period. 
@@ -284,10 +195,10 @@ The results do not appear to be a function of the percentile that is used to mea
 \graphicspath{{../Figures/}}
 \centering
 \caption{Event Study:  Extreme (High 99th percentile) Risk Reversal Skew and 16 day event window}
-\label{fig:ES1}
+\label{fig:ES5}
 \includegraphics[scale=0.8]{RRCum16}
 \end{figure}
-
+% the reference is ES5 to avoid conflict with the earlier version. 
 
 \begin{figure}[h!]
 \graphicspath{{../Figures/}}
@@ -367,71 +278,78 @@ Figure \ref{fig:ES3} shows the performance of the cumulative abnormal returns ar
 Figure \ref{fig:ES4} shows the abnormal returns around extreme high (90th percentile and long position).  There is some tentative evidence of continuation for speculative positions in the Canadian dollar and signs of reversal for UK sterling.  However, the Euro and the Japanese yen move sideways after the event.  There is no clear pattern after the extreme and therefore no information.  
 
 \section{Speculation and foreign exchange returns}
-This paper has sought to measure speculation and to use this measure to discover more about the relationship between speculation, information and asset prices.  The measurement of speculation takes two forms:  a measurement of the intensity of belief with the risk-reversal skew, and a measurement of speculative positions.  The option prices reveal the intensity of feeling through the weight of money in a speculative part (options) of a speculative market (foreign exchange).  The commitment of traders report records only speculators in the US futures market.  However, this is an important market, there is no reason to believe that US speculators in the futures market are systematically different from those in the rest of the world and presumably if there were a major difference there would be an arbitrage opportunity between the two markets.  
+This paper has sought to measure speculation and to use this measure to discover more about the relationship between speculation, information and asset prices.  
+Whether measured as intensity of speculative sentiment or as the weight of speculator action, it is clear that extreme speculation does not provide information about future returns.  This means that specualtion is more likely to be informed than uninformed.  If it were uninformed it woudl be much more likely that these extremes would be followe by reversals as informed market participants took advantage of the space created by this uninformed speculative activity. 
 
-There is strong evidence that speculation affects prices and that this effect is gradual rather than instantaneous.  This consistent with a market inefficiency that would reward momentum-based trading.  It is no wonder therefore that \citet{TaylorTechnical}, reporting a survey conducted by the Bank of England, found that of the Chief foreign exchange dealers contacted in London in November 1988, 90\% of them attached some weight to \emph{technical analysis}, a method that is fundamentally based on finding trends in asset prices.  The survey found that the importance of technical analysis became greater at shorter horizons.  The importance of momentum trading and technical analysis has not waned with time.  The more up-to-date CFTC data show the same pattern.  In addition,  \citet{NeelyWeller} show that gains from technical trading rules still generate excess returns and attribute this to behavioural biases. It seems that speculation forms part of the process of price discovery, but this process is not instantaneous as would be expected if the market were informationally efficient.   
+The possibility that noise-trader risk limits the activity of informed traders is limited by the large windows that are employed when constructing figures for the event study.  Informed traders may fear the uninformed in the short-run and this may delay the chance of a reversal but over the medium-term reversals would be expected.  This event study uses 20 days and 6 weeks for the daily and weekly event windows.  
+
+The nature speculation is central to a number of contemporary policy questions.  Amongst these are the design and regulation of financial markets, the surge in commodity prices and the kimits put on the activities of financial institutions. The debate about a tax on financial transactions, initiated by \citet{TobinTax} and now called the \emph{the Tobin tax}, has been intended to reduce speculation. The argument for a tax on financial transactions depends on the idea that speculators will drive the price away from its fundamental value. However, if speuclation is part of the process of price discovery, reducing its activity may incure costs that offset some of the benefits that are expected.      
+  
+The reduction in speculation in the US government bond market that has been seen since the introduction of new costs and restrictions under the array of ???? regulations has been seen by some to reduce liquidity and increase volatiolity, rising risk and imposing additional costs for final investors.  
+
+The surge in commodities prices that was seen prior to the GFC was seen to be partially the consequence of increased speculation in commodities and the creation of exchange traded funds (ETF) focusing on commodities markets. Even if speculators are on both side of the market and not driving prices in one direction, they may still increase the amount of volatility, incurring costs for producers and consumers of underlying materials.   
 
 The notion that speculation is at least partially informed is supported by the fact that there is little evidence from the event studies conducted here that speculation causes overshooting or bubbles.  When speculation is extreme, whether measured by intensity of belief or weight of speculative positions, future returns are as likely to be positive as negative.  There is no informational content as there would be if speculation was pure noise.  In the simulation of the De Long model, extremes are more likely to be followed by reversals.  In the foreign exchange market, that is not the case.  There are some large price crashes in the dataset, as shown by the descriptive statistics of the returns. For example  in Table \ref{tabref:DS1} it is seen that on one day there is a 10.65\% appreciation of the Japanese yen and Table \ref{tabref:DS2} shows a week when the Canadian dollar falls by 10\%.  However, the measures of speculative sentiment or the weight of speculation are not particularly high in either of these cases.  Indeed, an analysis of the top 1\% of positive and negative foreign exchange returns in the dataset reveals that sentiment and positions for this group were very close to the average of the whole set.  This would be consistent with a model where extreme price movement was a function of new information rather than the structure of existing positions.    
  
-These findings have implications for speculators, economic modellers and policy makers.  Speculators may jump on the trend, but they do not know by looking at how popular that trend is when to get off.  They need other signs to tell them that the trend has reached its conclusion or equilibrium has been achieved.  For the modellers, there is confirmation of the need  for feedback effects and evidence that reversals cannot be systematically identified from high levels of speculative positions.  It may suggest another trigger for bursting bubbles; it may, for example, suggest that this reversal has to be modelled as stochastic element or pure shock. For policy makers, there is no escape from the requirement to look at economic fundamentals when deciding whether bubbles are building in asset markets.  The presence of speculators is no guarantee that there is excess.  The speculators may be just part of the adjustment to new information.   
-
 \bibliography{../../../../myrefs}
 \begin{appendices}
 
 \section{Appendix 1}\label{apref:1}
 
 \begin{sidewaystable}
-
 \begin{threeparttable}
-\caption{Descriptive Statistics for Daily Exchange Rate Returns: 2 January 1996 to 6 September 2002}
- \label{tabref:DS1}
+\caption{Appendix 1: Descriptive Statistics for Risk Reversals: 2 January 1996 to 6 September 2002}
 \begin{tabular}{l | r r  r r r r r r r r}
   \hline
  Statistic &  AUD & EURGBP & EURSEK & GBP & CHF & EURCHF & EURJPY & EUR & CAD & JPY \\
-  \hline
-Number & 1685 & 1675 & 1716 & 1667 & 1674 & 1674 & 1675 & 1668 & 1683 & 1675  \\
-Mean & -0.0174 & -0.0187 & 0.0011 & 0.0025 & 0.0120 & -0.0039 & -0.0072 & -0.0172 & 0.0084 & 0.0076\\
-Median &  0.0000 & -0.0298 & 0.0000& 0.0000 & 0.0114 & 0.0000 & 0.0000 & -0.0253 & 0.0000 & 0.0188\\
-Standard deviation  & 0.7241 & 0.5542 & 0.0438 & 0.0489 & 0.6819 & 0.0277 & 0.8416 & 0.6338 & 0.0363 & 0.8170\\
-Max & 5.8301 & 3.0543 & 2.1633 & 2.2573 & 3.5086 & 1.6477 & 4.0879 & 2.4136 & 2.2170 & 5.1788 \\
-Min & -3.4666 & -2.2858 & -2.2900 & -2.2701 & -3.6525 & -1.8466 & -8.2848 & -2.2901 & -2.9707 & -10.6573 \\
-Skewness  & 0.1206* & 0.2923* & 0.0432 & -0.0452 & -0.1423* & -0.4046* & -0.7388* & 0.1738* & -0.1095 & -1.7237*\\
-Kurtosis & 4.17* & 1.88 & 2.43* & 1.48 & 1.96 & 5.84* & 7.08* & 1.12 & 5.11* & 21.52*\\
-\hline
+ \hline
+Number & 1702 & 1697 & 1719 & 1691 & 1374 & 1339 & 1697 & 1692 & 1701 & 1697 \\ 
+  Mean & -0.37 & 0.15 & 0.71 & -0.08 & -0.28 & -0.38 & -0.48 & 0.19 & 0.12 & -0.74 \\ 
+  Median & -0.30 & 0.10 & 0.80 & -0.10 & -0.15 & -0.30 & -0.10 & 0.10 & 0.15 & -0.55 \\ 
+  Standard Deviation & 0.38 & 0.37 & 0.51 & 0.33 & 0.49 & 0.36 & 1.02 & 0.49 & 0.25 & 1.02 \\ 
+ Max & 0.45 & 1.72 & 1.90 & 1.00 & 1.05 & 0.50 & 1.70 & 2.05 & 1.45 & 2.05 \\ 
+ Min & -1.70 & -0.80 & -0.30 & -1.35 & -2.05 & -1.80 & -4.03 & -1.15 & -0.65 & -4.00 \\ 
+ Skewness & -0.50* & 1.27* & -0.23* & 0.33* & -0.79* & -0.58* & -0.93* & 0.68* & 0.23* & -0.51* \\ 
+  Kurtosis & 0.02 & 2.29* & -1.67 & 0.72 & 0.69 & 0.19 & 0.15 & 0.96 & 1.83 & -0.03 \\ 
+      \hline
+ \label{tabref:DS2}
 \end{tabular}
 \begin{tablenotes}
 \small
-\item Continuously compounded returns (multiplied by 100) for period 2 January 1996 to  September 2002 for US dollar per unit of Australian dollar (AUD), UK sterling per unit of Euro (EURGBP), Swedish Crown per unit of EUR (EURSEK); US dollar per unit of UK sterling (GBP);  Swiss franc per unit of US dollar (CHF); Swiss franc per unit of Euro (EURCHF); US dollars per unit of Euro (EUR); Canadian dollars per unit of US dollar (CAD); Japanese yen per unit of US dollars (JPY). The asterisk (*) means that the estimate is significantly different from zero at the 5\% level using t-statistics for the mean and the standard error of skew and standard error of excess-kurtosis respectively.    
+\item Daily risk reversal skew.  Risk reversal is the premium of implied volatility for calls relative to the equivalent put (equal distance to the strike price, 25 delta in this case).  A figure above zero means that calls are more expensive (in volatility and price terms) than puts.  A figure below zero means that puts are more expensive. The asterisk (*) means that the estimate is significant at the 5\% level using t-statistics for the mean and the standard error of skew and standard error of excess-kurtosis respectively.   These are calculated as $SES = \sqrt{\frac{6n(n-1)}{(n-2)(N+1)(N+3)}}$ and $SEK = \sqrt{\frac{n^2-1}{(n-3)(N+5)}}$, with the assumption that this estimate is distributed normally, the skew or kurtosis is considered significant if it is more than two standard errors from zero.
 \end{tablenotes}
 \end{threeparttable}
 \end{sidewaystable}
 
 \section{Appendix 2}
-
+\begin{sidewaystable}
 \begin{threeparttable}
-\caption{Descriptive Statistics for Weekly Exchange Rate Returns: 30 September 1998 to 31 December 2008}
-\begin{tabular}{{4cm} | r r  r r r }
+\caption{Appendix 2: Descriptive Statistics for S1 (Speculative Sentiment) and S2 (Speculative Weight): 30 September 1998 to 31 December 2008}
+\begin{tabular}{l | r r r r r r r  r r r }
   \hline
- Statistic &  EUR & JPY & GBP & CHF & CAD  \\
-  \hline
-Number & 522 &  849 & 849 & 847 & 849 \\
-Mean & 0.0351 & 0.0337 & -0.0202 & 0.0233 & 0.0018\\
-Median & 0.0650 & -0.0800 & 0.0000 & 0.0000 & -0.0200\\
-Standard deviation  & 1.4063 & 1.6355 & 1.2755 & 1.5418 & 1.0558\\
-Max & 8.7900 & 11.6700 & 5.7200 & 8.3400 & 10.0100\\
-Min & -4.2400 & -15.0400 & -6.4100 & -5.7100 & -5.0900\\
-Skew  & 0.27* & -0.06 & -0.34* & 0.31* & 0.78*\\
-Kurtosis & 2.76*& 12.58* & 2.07 * & 1.82 & 11.59*\\
+ Statistic &  \multicolumn{2}{c}{EUR} & \multicolumn{2}{c}{JPY} & \multicolumn{2}{c}{GBP} & \multicolumn{2}{c}{CHF} & \multicolumn{2}{c}{CAD}  \\
+ & S1 & S2 & S1 & S2 & S1 & S2 & S1 & S2 & S1 & S2 \\  
 \hline
- \label{tabref:DS3}
+Number & 522 &  522 & 849 & 849 & 849 & 849 & 847 & 847 & 849 & 849\\
+Mean &  31.31 & 43.43 & -23.90 & 44.21 & 2.76 & 41.68 & -21.14 & 46.13 & 6.68 & 41.23\\
+Median & 42.75 & 39.56 & -33.30 & 43.56 & 11.15 & 38.88 & -37.32 & 42.88 & 7.44 & 39.81\\
+Standard deviation  & 41.94 & 16.13 & 51.49 & 12.17 & 60.59 & 16.46 & 60.76 & 15.73 & 55.26 & 15.33\\
+Max & 95.67 & 86.06 & 87.43 & 84.50 & 96.15 & 89.45 & 100.00 & 92.49 & 100.00 & 86.63\\
+Min &  -100.00 & 11.15 & -99.83 & 12.88 & -100.00 & 9.10 & -100.00 & 14.61 & -90.08 & 11.89\\
+Skew  & -0.88* & 0.55* & 0.33* & 0.57* & -0.17 & 0.76* & 0.45* & 0.65* & 0.02 & 0.50*\\
+Kurtosis & 0.18 & -0.57 & -1.14 & 0.64 & -1.45 & 0.15 & -1.25 & -0.15 & -1.35 & -0.28\\
+\hline
+ \label{tabref:DS4}
 \end{tabular}
 \begin{tablenotes}
 \small
-\item Continuously compounded returns multiplied by 100 for US dollar per unit of Euro (EUR), US dollar per unit of Japanese Yen (JPY), US dollar per unit of UK Sterling (GBP), US dollar per unit of Swiss Franc (CHF) and US dollar per unit of Canadian dollar (CAD) for the period 30 September 1998 to 31 Dec 2008;     An asterisk (*) means that the estimate is significantly different from zero at the 5\% level of statistical significance using t-statistics for the mean and the standard error of skew and standard error of excess-kurtosis respectively.  These are calculated as $SES = \sqrt{\frac{6n(n-1)}{(n-2)(N+1)(N+3)}}$ and $SEK = \sqrt{\frac{n^2-1}{(n-3)(N+5)}}$, with the assumption that this estimate is distributed normally, the skew or kurtosis is considered significant if it is more than two standard errors from zero.
+\item S1 is the first sentiment indicator, calculated as ratio of net non-commercial long less non-commercial short to the sum of non-commercial long and short positions multiplied by one hundred.  S2 is the second sentiment indicators, calculated as the ratio of net non-commercial long to net non-commercial short plus spreading to open interest.   An asterisk (*) means that the estimate is significantly different from zero at the 5\% level using t-statistics for the mean and the standard error of skew and standard error of excess-kurtosis respectively.  These are calculated as $SES = \sqrt{\frac{6n(n-1)}{(n-2)(N+1)(N+3)}}$ and $SEK = \sqrt{\frac{n^2-1}{(n-3)(N+5)}}$, with the assumption that this estimate is distributed normally, the skew or kurtosis is considered significant if it is more than two standard errors from zero.
 \end{tablenotes}
 \end{threeparttable}
+\end{sidewaystable}
 
 
 \end{appendices}
 
 \end{document}
+
