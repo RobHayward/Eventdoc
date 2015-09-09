@@ -2,7 +2,7 @@ require(eventstudies)
 require(PerformanceAnalytics)
 require(xtable)
 # Create extreme readings and prepare event files-------------------------
-currency = "GBP"
+currency = "EUR"
 extreme = "high"
 hi = as.numeric(0.95)
 lo = as.numeric(0.05)
@@ -63,11 +63,7 @@ FX.exwc.b
 FX.exac.b <- inference.Ecar(FX.exac, to.plot = TRUE)
 FX.exac.b
 # create charts for comparison of extreme and regular returns. 
-FX.exac # This is the list of returns. 
-hist(FX.exacm[11,], breaks = 10, prob = TRUE)
-mean(FX.exacm[11,], na.rm = TRUE)
-sd(FX.exacm[11,])
-mean(FX.exacm[11,])/sd(FX.exacm[11,])
+ 
 par(mfrow = c(2,1))
 plot(density(100*FX.exacm[2,]), xlim = c(-2.0, 2.0), main = "Extreme Density",
      lwd = 2, col = "red")
@@ -78,3 +74,15 @@ plot(density(sample(FX.z[-1,3], 113), na.rm = TRUE), xlim = c(-2.0, 2.0),
      main = "Regular Density", lwd = 2, col = "red")
 abline(v = mean(FX.z[-1, 3], na.rm = TRUE))
 text(x = .22, y = 0.4, labels = "Mean")
+# Mean and standard deviation of return day after extreme
+me <- round(mean(FX.exacm[1,], na.rm = TRUE),4)
+sde <- round(sd(FX.exacm[11,]), 4)
+tex <- round(mean(FX.exacm[11,])/sd(FX.exacm[11,]),4)
+# Mean and standard deviation of return (full sample)
+mr <- round(mean(FX.z[-1,3], na.rm = TRUE),4)
+sdr <- round(sd(FX.z[-1,3], na.rm = TRUE), 4)
+tr <- round(mean(FX.z[-1,3], na.rm = TRUE)/sd(FX.z[-1,3], na.rm = TRUE),4)
+df <- data.frame(ex = c(me, sde, tex), r = c(mr, sdr, tr))
+rownames(df) <- c("Mean", "SD", "T-stat")
+df
+
