@@ -93,20 +93,30 @@ eventlist <- lapply(clist, FUN = eventzoo, wind = 2, hilo = "lo")
 # create charts for comparison of extreme and regular returns. 
 # this requires the currencydf and currdf (best to take from list)
 twochart <- function(currencydf, currdf){ 
-par(mfrow = c(2,1))
-title1 <- paste("Extreme", colnames(clist[[1]])[1], sep = " ")
-title2 <- paste("Regular", colnames(clist[[1]])[1], sep = " ")
-plot(density(100*currdf$currdf[2,]), xlim = c(-2.0, 2.0), main = title1,
+par(mfrow = c(2,3))
+title1 <- paste("Extreme", colnames(clist[[i]])[1], sep = " ")
+title2 <- paste("Regular", colnames(clist[[i]])[1], sep = " ")
+plot(density(100*eventlist[[i]]$FX.exacm[2,]), xlim = c(-2.0, 2.0), main = title1,
      lwd = 2, col = "red")
-abline(v = mean(currdf$currdf[2,], na.rm = TRUE))
-text(x = mean(currdf$currdf[2, ], na.rm = TRUE) + 0.2, y = 0.2, labels = "Mean")
+abline(v = mean(eventlist[[i]]$FX.exacm[2,], na.rm = TRUE))
+text(x = mean(eventlist[[i]]$FX.exacm[2,], na.rm = TRUE) + 0.2, y = 0.2, labels = "Mean")
 # need to sample 
-plot(density(sample(currencydf[-1,3], 113), na.rm = TRUE), xlim = c(-2.0, 2.0), 
+plot(density(sample(clist[[i]]$r,113), na.rm = TRUE), xlim = c(-2.0, 2.0), 
      main = title2, lwd = 2, col = "red")
-abline(v = mean(currencydf[-1, 3], na.rm = TRUE))
-text(x = mean(currencydf[-1,3], na.rm = TRUE) + 0.2, y = 0.4, labels = "Mean")
+abline(v = mean(sample(clist[[i]]$r, 113), na.rm = TRUE))
+text(x = mean(sample(clist[[i]]$r, 113), na.rm = TRUE) + 0.2, y = 0.4, labels = "Mean")
 }
-twochart(clist[[10]], eventlist[[10]])
+twochart(clist[[3]], eventlist[[3]])
+#------------------------------------------------
+# This will create the pdf figures for the distribution
+# The graphs are not put on the same page
+pdf("Dist.pdf", paper= "a4r", width = 9, title = "Distribution of returns")
+par(mfcol=c(3,1), oma = c(0,0,1,0))
+for(i in c("EUR", "GBP", "JPY")){
+  twochart(clist[[i]], eventlist[[i]])
+}
+dev.off()
+twochart(clist[[3]], eventlist[[3]])
 #--------------------------------------------------------------
 # Compare next day return for extreme and regular
 # THis requires a currencydf and currdf
@@ -160,12 +170,13 @@ clist[[6]][clist[[6]]$r >= quantile(clist[[6]]$r, 0.99, na.rm = TRUE)]
 # the next two lines count the number of highs and lows. 
 # large-loss and a high; large-loss and a lo; large gain and high, large gain low
 i = "CHF"
-df3 <- matrix(NA, nrow = 10, ncol = 5, dimnames = list(c(currencylist), 
-                      c("N", "llh", "lll", "lgh", "lgl")))
+df3 <- matrix(NA, nrow = 10, ncol = 6, dimnames = list(c(currencylist), 
+                      c("N", "llh", "lll", "N", "lgh", "lgl")))
 for(i in currencylist){
-n <- length(clist[[i]][clist[[i]]$r <= quantile(clist[[i]]$r, 
+n1 <- length(clist[[i]][clist[[i]]$r <= quantile(clist[[i]]$r, 
                                           0.01, na.rm = TRUE)]$exh) 
-str(clist["CHF"])
+n2 <- length(clist[[i]][clist[[i]]$r >= quantile(clist[[i]]$r, 
+                                                 0.99, na.rm = TRUE)]$exh)
 llh <- sum(clist[[i]][clist[[i]]$r <= quantile(clist[[i]]$r, 
                            0.01, na.rm = TRUE)]$exh, na.rm = TRUE) 
 lll <- sum(clist[[i]][clist[[i]]$r <= quantile(clist[[i]]$r, 0.01, 
@@ -174,11 +185,12 @@ lgh <- sum(clist[[i]][clist[[i]]$r >= quantile(clist[[i]]$r,
                          0.99, na.rm = TRUE)]$exh, na.rm = TRUE) 
 lgl <- sum(clist[[i]][clist[[i]]$r >= quantile(clist[[i]]$r, 0.99,
                                  na.rm = TRUE)]$exl, na.rm = TRUE) 
-df3[i,1] <- n
+df3[i,1] <- n1
 df3[i,2] <- llh
 df3[i,3] <- lll
-df3[i,4] <- lgh
-df3[i,5] <- lgl
+df3[i,4] <- n2
+df3[i,5] <- lgh
+df3[i,6] <- lgl
 }
 df3
 lgh
