@@ -88,7 +88,9 @@ str(EUR2lo)
 # Use lapply to apply function (currencydf to the currdf list of zoo objects)
 # Can the high and low each be added to the components of the list and can the 
 # the optional output be selected in the function? 
-eventlist <- lapply(clist, FUN = eventzoo, wind = 2, hilo = "hi")
+# eventlist.lo is for extreme low and event.list is for extreme high
+eventlist.hi <- lapply(clist, FUN = eventzoo, wind = 2, hilo = "hi")
+eventlist.lo <- lapply(clist, FUN = eventzoo, wind = 2, hilo = "lo")
 #-------------------------------------------------------------
 # create charts for comparison of extreme and regular returns. 
 # this requires the currencydf and currdf (best to take from list)
@@ -106,7 +108,7 @@ plot(density(sample(clist[[i]]$r,113), na.rm = TRUE), xlim = c(-2.0, 2.0),
 abline(v = mean(sample(clist[[i]]$r, 113), na.rm = TRUE))
 text(x = mean(sample(clist[[i]]$r, 113), na.rm = TRUE) + 0.2, y = 0.4, labels = "Mean")
 }
-twochart(clist[["GBP"]], eventlist[["GBP"]])
+twochart(clist[[i]], eventlist[[i]])
 #------------------------------------------------
 # This will create the pdf figures for the distribution
 # The graphs are not put on the same page
@@ -124,10 +126,12 @@ twochart(clist[[3]], eventlist[[3]])
 df <- matrix(NA, ncol = 6, nrow = 10)
 rownames(df) <- currencylist
 for(i in currencylist){
-df[i,1] <- round(mean(clist[[i]]$r, na.rm = TRUE), 4)
-df[i,5] <- round(mean(eventlist[[i]]$FX.exacm[2,], na.rm = TRUE), 4)
-df[i,2] <- round(sd(clist[[i]]$r, na.rm = TRUE), 4)
-df[i,6] <- round(sd(eventlist[[i]]$FX.exacm[2,], na.rm = TRUE), 4)
+df[i, 1] <- round(mean(eventlist.hi[[i]]$FX.exacm[2,], na.rm = TRUE)*100, 4)
+df[i, 2] <- round(sd(eventlist.hi[[i]]$FX.exacm[2,], na.rm = TRUE)*100, 4)
+df[i, 3] <- round(mean(eventlist.lo[[i]]$FX.exacm[2,], na.rm = TRUE)*100, 4)
+df[i, 4] <- round(sd(eventlist.lo[[i]]$FX.exacm[2,], na.rm = TRUE)*100, 4) 
+df[i, 5] <- round(mean(clist[[i]]$r, na.rm = TRUE), 4)
+df[i, 6] <- round(sd(clist[[i]]$r, na.rm = TRUE), 4)
 }
 df
 dfx <- xtable(df, digits = 4)

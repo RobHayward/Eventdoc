@@ -195,29 +195,29 @@ It is also possible to look at the distribution exchange rate returns after thes
 % Add the table with the descriptive statistics for returns that follow an extreme compared to the whole sample. 
 \begin{table}[h]
 \begin{threeparttable}
-\begin{tabular}{p{3cm} rrllll}
+\begin{tabular}{rrrrrrr}
 & \multicolumn{4}{c}{Extreme Distribution}&\multicolumn{2}{c}{Regular Distribution}\\
 & \multicolumn{2}{c}{High}&\multicolumn{2}{c}{Low}&
 \multicolumn{2}{l}{}\\
  & Mean & Std & Mean & Std & Mean & Std \\
 \hline
-AUD & -0.0174 & -0.0017 &  &  & 0.7241 & 0.0106 \\ 
-  EURGBP & -0.0187 & 0.0010 &  &  & 0.5542 & 0.0090 \\ 
-  EURSEK & 0.0011 & 0.0014 &  &  & 0.4384 & 0.0061 \\ 
-  GBP & 0.0025 & 0.0003 &  &  & 0.4892 & 0.0093 \\ 
-  CHF & 0.0120 & -0.0011 &  &  & 0.6819 & 0.0135 \\ 
-  EURCHF & -0.0039 & 0.0002 &  &  & 0.2769 & 0.0054 \\ 
-  EURJPY & -0.0072 & -0.0016 &  &  & 0.8416 & 0.0154 \\ 
-  EUR & -0.0172 & -0.0009 &  &  & 0.6338 & 0.0094 \\ 
-  CAD & 0.0084 & -0.0006 &  &  & 0.3632 & 0.0052 \\ 
-  JPY & 0.0076 & 0.0009 &  &  & 0.8170 & 0.0139 \\ 
+AUD & 0.0125 & 0.8312 & -0.1711 & 1.0588 & -0.0174 & 0.7241 \\ 
+  EURGBP & 0.0696 & 0.7582 & 0.0996 & 0.9028 & -0.0187 & 0.5542 \\ 
+  EURSEK & 0.0033 & 0.6572 & 0.1373 & 0.6059 & 0.0011 & 0.4384 \\ 
+  GBP & 0.1909 & 0.8861 & 0.0312 & 0.9314 & 0.0025 & 0.4892 \\ 
+  CHF & -0.0565 & 0.9577 & -0.1125 & 1.3452 & 0.0120 & 0.6819 \\ 
+  EURCHF & 0.0690 & 0.4198 & 0.0194 & 0.5445 & -0.0039 & 0.2769 \\ 
+  EURJPY & -0.1103 & 1.2729 & -0.1647 & 1.5424 & -0.0072 & 0.8416 \\ 
+  EUR & 0.1586 & 1.0942 & -0.0933 & 0.9411 & -0.0172 & 0.6338 \\ 
+  CAD & -0.0489 & 0.8006 & -0.0571 & 0.5236 & 0.0084 & 0.3632 \\ 
+  JPY & 0.1341 & 1.0090 & 0.0946 & 1.3921 & 0.0076 & 0.8170 \\ 
+   \hline
 \caption{Comparison of extreme and regular return distribution}
 \label{tabref:D}
 \end{tabular}
 \begin{tablenotes}
 \small 
 \item This table shows a comparison of the mean return for the whole of the sample compared to the mean return for the day after an extreme has been reached.  It is clear that there is no significant different between the mean returns, arguing against the idea that speculation is uninformed. However, the standard deviation of the returns is much broader once there has been extreme speculation. This may suggest increased risk or increased uncertainty.  
-\hline
 \end{tablenotes}
 \end{threeparttable}  
 \end{table}
@@ -287,14 +287,24 @@ There is little evidence that these self-reported speculators are driving prices
 Figures \ref{fig:ES3} and \ref{fig:ES4} indicate that these results are not a function of the event window that has been chosen.  Looking at the $95^{th}$ percentile confidence intervals (once again constructed by bootstrap re-sampling) indicates that in all the cases, there is a large amount of uncertainty about the future direction well after the extreme reading of speculative activity.  It does not appear that informed traders are constrained in the short-run from driving prices back to equilibrium.  It appears that the informed traders are driving prices to a new level. 
 
 \section{Speculation and foreign exchange returns}
-The nature speculative activity in financial markets is central to a number of contemporary policy questions.  Amongst these are the design and regulation of financial markets, the response to the surge in commodity prices that took place between the period 2002 and 2007 and the limits that should be put on the activities of financial institutions. This paper provides some evidence to assist in policy making in these areas.   
+The nature speculative activity in financial markets is central to a number of contemporary policy questions.  Amongst these are the design and regulation of financial markets, the response to the surge in commodity prices that took place between 2002 and 2007 and the limits that should be put on the activities of financial institutions. This paper provides some evidence to assist in policy making in these areas.   
 
-The debate about a tax on financial transactions, initiated by \citet{TobinTax} and now called the \emph{the Tobin tax}, has been intended to reduce speculation. This is based on the belief that if speculation is uninformed, that it drive prices away from their fundamental value and, as a consequence, increases the volatility of financial asset prices. The argument for a tax on financial transactions can be presented as a tax on an externalities with the level of volatility of financial markets being the public cost.  
+The debate about a tax on financial transactions, initiated by \citet{TobinTax} and now called the \emph{the Tobin tax}, has been intended to reduce speculation. This is based on the belief that if speculation is uninformed, that it drives prices away from their fundamental value and, as a consequence, increases the volatility of financial asset prices. The argument for a tax on financial transactions can be presented as a tax on an externalities with the level of volatility of financial markets being the public cost.  
 
-The increase in volatility that is evident when speculative activity is high that has been identified in this work seems to provide some support to this argument.  However, it is not clear that the direction of causality is from speculation to volatility.  An alternative view would suggest that an increase in information raises the amount of informed speculation and that this increase in information naturally increase the volatility of financial assets. Causation runs from information to volatility with speculation between. If speculation is part of the process of price discovery, reducing its activity may reduce liquidity and hinder the process of price discovery.  In that case unanticipated costs may offset some of the benefits that are expected from the tax on speculation. Volatility may even increase.       
+The increase in volatility that is evident when speculative activity is high that has been identified in this work seems to provide some support to this argument.  However, it is not clear that the direction of causality is from speculation to volatility.  An alternative view would suggest that an increase in information raises the amount of informed speculation and that this increase in information naturally increase the volatility of financial assets. Causation runs from information to volatility with speculation between. If speculation is part of the process of price discovery, reducing its activity may reduce liquidity and hinder the process of price discovery.  In that case unanticipated costs may offset some of the benefits that are expected from the tax on speculation. Volatility may even increase.  
+
+If speculation is more informed than uninformed, reducing the amount of speculation will reduce the ratio of information to noise and reduce liquidity.  
   
-Regulatory changes in the US government bond market give some hints at the way that reduce speculation can affect the smooth functioning of markets. Increased capital requirements and the so-called \emph{Volcker Rule} that would prevent investment banks from trading on their own account have increased the cost of trading US government bonds and reduced the ability of some key players to participate in the market. Though bid-ask spreads have remained stable, the New York Federal Reserve reports that \emph{market-depth} and the \emph{price impact} of large trades has deteriorated in the last two years.  This is regarded as one of the reason that volatility has increased at times of tension and as liquidty has evaporated and large price changes have been recorded. 
-
+Regulatory changes in the US government bond market give some idea about way that a reduction in speculation can affect the smooth functioning of financial markets. Increased capital requirements and the so-called \emph{Volcker Rule} that would prevent investment banks from trading on their own account have raised the cost of trading US government bonds and reduced the ability of some key players to participate in the market. Though bid-ask spreads have remained stable, the New York Federal Reserve reports that \emph{market-depth} and the \emph{price impact} of large trades has deteriorated in the last two years. \footnote{See New York Fed citation for an assessment of the evolution of bid-ask spreads, price impact and the size of trades.  }  This is regarded as one of the reason that volatility has increased at times of tension and as liquidty has evaporated and large price changes have been recorded. 
+%@misc{NTFedbonds, 
+%  author = {Tobias Adrian and Machael Fleming and Daniel Stackman and Erik Vogt},
+%  title = {Has {US} Treasury Market Liquidity Deteriorated?},
+%  year = {2015},
+%  month = {August},
+%  URL = {http://libertystreeteconomics.newyorkfed.org/2015/08/has-us-treasury-market-liquidity-deteriorated.html},
+%  publisher = {Federal Researve Bank of New York},
+%  journal = {Liberty Street Economics}
+%}
 The increased presence of high frequency trading (HFT) has also been seen by some as an unwanted development that has increased the amount of speculation and volatility.  Again, the results of this study suggest that there should be some caution in removing speculative elements from the market.  
 \bibliography{../../myrefs}
 
