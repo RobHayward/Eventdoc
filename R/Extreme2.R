@@ -1,4 +1,4 @@
-# Load required packages
+  # Load required packages
 require(eventstudies) 
 require(PerformanceAnalytics)
 require(xtable)
@@ -88,12 +88,12 @@ str(EUR2lo)
 # Use lapply to apply function (currencydf to the currdf list of zoo objects)
 # Can the high and low each be added to the components of the list and can the 
 # the optional output be selected in the function? 
-eventlist <- lapply(clist, FUN = eventzoo, wind = 2, hilo = "lo")
+eventlist <- lapply(clist, FUN = eventzoo, wind = 2, hilo = "hi")
 #-------------------------------------------------------------
 # create charts for comparison of extreme and regular returns. 
 # this requires the currencydf and currdf (best to take from list)
 twochart <- function(currencydf, currdf){ 
-par(mfrow = c(2,3))
+par(mfrow = c(2,1))
 title1 <- paste("Extreme", colnames(clist[[i]])[1], sep = " ")
 title2 <- paste("Regular", colnames(clist[[i]])[1], sep = " ")
 plot(density(100*eventlist[[i]]$FX.exacm[2,]), xlim = c(-2.0, 2.0), main = title1,
@@ -106,11 +106,12 @@ plot(density(sample(clist[[i]]$r,113), na.rm = TRUE), xlim = c(-2.0, 2.0),
 abline(v = mean(sample(clist[[i]]$r, 113), na.rm = TRUE))
 text(x = mean(sample(clist[[i]]$r, 113), na.rm = TRUE) + 0.2, y = 0.4, labels = "Mean")
 }
-twochart(clist[[3]], eventlist[[3]])
+twochart(clist[["GBP"]], eventlist[["GBP"]])
 #------------------------------------------------
 # This will create the pdf figures for the distribution
 # The graphs are not put on the same page
-pdf("Dist.pdf", paper= "a4r", width = 9, title = "Distribution of returns")
+pdf("Figures/Extreme/Dist.pdf", paper= "a4r", width = 9, 
+    title = "Distribution of returns")
 par(mfcol=c(3,1), oma = c(0,0,1,0))
 for(i in c("EUR", "GBP", "JPY")){
   twochart(clist[[i]], eventlist[[i]])
@@ -119,21 +120,20 @@ dev.off()
 twochart(clist[[3]], eventlist[[3]])
 #--------------------------------------------------------------
 # Compare next day return for extreme and regular
-# THis requires a currencydf and currdf
-comparedist <- function(currencydf, currdf){
-# Mean and standard deviation of return day after extreme
-me <- round(mean(currdf$currdf[2,], na.rm = TRUE),4)
-sde <- round(sd(currdf$currdf[2,]), 4)
-tex <- round(mean(currdf$currdf[2,])/sd(currdf$currdf[2,]),4)
-# Mean and standard deviation of return (full sample)
-mr <- round(mean(currencydf[-1, 3], na.rm = TRUE),4)
-sdr <- round(sd(currencydf[-1, 3], na.rm = TRUE), 4)
-tr <- round(mean(currencydf[-1, 3], na.rm = TRUE)/
-              sd(currencydf[-1, 3], na.rm = TRUE),4)
-df <- data.frame(ex = c(me, sde, tex), r = c(mr, sdr, tr))
-rownames(df) <- c("Mean", "SD", "T-stat")
-return(df)  
+# THis requires an element from the clist and the eventlist
+df <- matrix(NA, ncol = 6, nrow = 10)
+rownames(df) <- currencylist
+for(i in currencylist){
+df[i,1] <- round(mean(clist[[i]]$r, na.rm = TRUE), 4)
+df[i,5] <- round(mean(eventlist[[i]]$FX.exacm[2,], na.rm = TRUE), 4)
+df[i,2] <- round(sd(clist[[i]]$r, na.rm = TRUE), 4)
+df[i,6] <- round(sd(eventlist[[i]]$FX.exacm[2,], na.rm = TRUE), 4)
 }
+df
+dfx <- xtable(df, digits = 4)
+dfx
+
+# This is a fuller list of comparison that could be builr
 comparedist(clist[[3]], eventlist[[3]])
 colnames(clist[[1]])[1]
 eventlist[[1]][3]
@@ -142,6 +142,7 @@ title2 <- paste("Regular", colnames(clist[[1]])[1], sep = " ")
 head(clist[[1]]$r)
 b <- round(apply(clist[[1]][-1,3], FUN = mystats, na.omit = TRUE, MARGIN = 2),4)
 d <- round(apply(eventlist[[1]][[5]], FUN = mystats, MARGIN = 1)[, 2], 4)
+
 
 # e and d need to be turned into a table. 
 # mystats function to post a list of descriptive statistics. 
@@ -193,7 +194,7 @@ df3[i,5] <- lgh
 df3[i,6] <- lgl
 }
 df3
-lgh
+df3x <- xtable(df3)
 
 # VR test------------------
 # This is not yet started. 

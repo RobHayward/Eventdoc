@@ -77,3 +77,15 @@ somefunction(x, data = myData)
 A = c(1,2)
 somefunction(A)
 somefunction(A, data = myData)
+
+df <- matrix(NA, ncol = 6, nrow = 10)
+rownames(df) <- currencylist
+for(i in currencylist){
+df[i,1] <- round(mean(clist[[i]]$r, na.rm = TRUE), 4)
+df[i,2] <- round(mean(eventlist[[i]]$FX.exacm[2,], na.rm = TRUE), 4)
+df[i,5] <- round(sd(clist[[i]]$r, na.rm = TRUE), 4)
+df[i,6] <- round(sd(eventlist[[i]]$FX.exacm[2,], na.rm = TRUE), 4)
+}
+df
+dfx <- xtable(df, digits = 4)
+dfx
