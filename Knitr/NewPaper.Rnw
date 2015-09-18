@@ -295,16 +295,8 @@ The increase in volatility that is evident when speculative activity is high tha
 
 If speculation is more informed than uninformed, reducing the amount of speculation will reduce the ratio of information to noise and reduce liquidity.  
   
-Regulatory changes in the US government bond market give some idea about way that a reduction in speculation can affect the smooth functioning of financial markets. Increased capital requirements and the so-called \emph{Volcker Rule} that would prevent investment banks from trading on their own account have raised the cost of trading US government bonds and reduced the ability of some key players to participate in the market. Though bid-ask spreads have remained stable, the New York Federal Reserve reports that \emph{market-depth} and the \emph{price impact} of large trades has deteriorated in the last two years. \footnote{See New York Fed citation for an assessment of the evolution of bid-ask spreads, price impact and the size of trades.  }  This is regarded as one of the reason that volatility has increased at times of tension and as liquidty has evaporated and large price changes have been recorded. 
-%@misc{NTFedbonds, 
-%  author = {Tobias Adrian and Machael Fleming and Daniel Stackman and Erik Vogt},
-%  title = {Has {US} Treasury Market Liquidity Deteriorated?},
-%  year = {2015},
-%  month = {August},
-%  URL = {http://libertystreeteconomics.newyorkfed.org/2015/08/has-us-treasury-market-liquidity-deteriorated.html},
-%  publisher = {Federal Researve Bank of New York},
-%  journal = {Liberty Street Economics}
-%}
+Regulatory changes in the US government bond market give some idea about way that a reduction in speculation can affect the smooth functioning of financial markets. Increased capital requirements and the so-called \emph{Volcker Rule} that would prevent investment banks from trading on their own account have raised the cost of trading US government bonds and reduced the ability of some key players to participate in the market. Though bid-ask spreads have remained stable, the New York Federal Reserve reports that \emph{market-depth} and the \emph{price impact} of large trades has deteriorated in the last two years. \footnote{See \citet{NYFedbonds} for an assessment of the evolution of bid-ask spreads, price impact and the size of trades.  }  This is regarded as one of the reason that volatility has increased at times of tension and as liquidty has evaporated and large price changes, like the one see on 15 October 2014 have been recorded. \footnote{The US 10-year note yield fell nearly 30bp in 30 miunutes, falling from 2.2\% to about 1.9\%.} A report by the NY Fed, the US TReasury and the CFTC about this very large adjustment in US bond prices concluded that a combination of the unwinding of a very large large short position, a decline in order book depth and changes in the provision of liquidity contributed to the action \citet{USbondflash}. 
+
 The increased presence of high frequency trading (HFT) has also been seen by some as an unwanted development that has increased the amount of speculation and volatility.  Again, the results of this study suggest that there should be some caution in removing speculative elements from the market.  
 \bibliography{../../myrefs}
 
