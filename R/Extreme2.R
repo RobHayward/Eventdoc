@@ -94,24 +94,25 @@ eventlist.lo <- lapply(clist, FUN = eventzoo, wind = 2, hilo = "lo")
 #-------------------------------------------------------------
 # create charts for comparison of extreme and regular returns. 
 # this requires the currencydf and currdf (best to take from list)
-twochart <- function(currencydf, currdf){ 
+twochart <- function(clist, eventlist){ 
 par(mfrow = c(2,1))
 title1 <- paste("Extreme", colnames(clist[[i]])[1], sep = " ")
 title2 <- paste("Regular", colnames(clist[[i]])[1], sep = " ")
-plot(density(100*eventlist[[i]]$FX.exacm[2,]), xlim = c(-2.0, 2.0), main = title1,
-     lwd = 2, col = "red")
+plot(density(100*eventlist[[i]]$FX.exacm[2,]), main = title1,
+     lwd = 2, col = "red", xlab = "Return")
 abline(v = mean(eventlist[[i]]$FX.exacm[2,], na.rm = TRUE))
 text(x = mean(eventlist[[i]]$FX.exacm[2,], na.rm = TRUE) + 0.2, y = 0.2, labels = "Mean")
 # need to sample 
 plot(density(sample(clist[[i]]$r,113), na.rm = TRUE), xlim = c(-2.0, 2.0), 
-     main = title2, lwd = 2, col = "red")
+     main = title2, lwd = 2, col = "red", xlab = "Return")
 abline(v = mean(sample(clist[[i]]$r, 113), na.rm = TRUE))
 text(x = mean(sample(clist[[i]]$r, 113), na.rm = TRUE) + 0.2, y = 0.4, labels = "Mean")
 }
-twochart(clist[[i]], eventlist[[i]])
+twochart(clist, eventlist.hi)
 #------------------------------------------------
 # This will create the pdf figures for the distribution
 # The graphs are not put on the same page
+# NOT WORKING
 pdf("Figures/Extreme/Dist.pdf", paper= "a4r", width = 9, 
     title = "Distribution of returns")
 par(mfcol=c(3,1), oma = c(0,0,1,0))
@@ -136,6 +137,9 @@ df[i, 6] <- round(sd(clist[[i]]$r, na.rm = TRUE), 4)
 df
 dfx <- xtable(df, digits = 4)
 dfx
+a <- boot(as.matrix(eventlist.hi[[i]]$FX.exacm[2,]), sd, R = 100, 
+          na.rm = TRUE)
+a
 
 # This is a fuller list of comparison that could be builr
 comparedist(clist[[3]], eventlist[[3]])
