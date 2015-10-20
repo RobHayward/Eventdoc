@@ -1,6 +1,12 @@
-\documentclass[12pt, a4paper, oneside]{article} % Paper size, default font size and one-sided paper
+\documentclass[preprint,12pt,authoryear]{elsarticle}
 %\graphicspath{{./Figures/}} % Specifies the directory where pictures are stored
 %\usepackage[dcucite]{harvard}
+% \documentclass[final,1p,times,authoryear]{elsarticle}
+%\documentclass[final,1p,times,twocolumn,authoryear]{elsarticle}
+%\documentclass[final,3p,times,authoryear]{elsarticle}
+%\documentclass[final,3p,times,twocolumn,authoryear]{elsarticle}
+%\documentclass[final,5p,times,authoryear]{elsarticle}
+%\documentclass[final,5p,times,twocolumn,authoryear]{elsarticle}
 \usepackage{rotating}
 \usepackage{amsmath}
 \usepackage{setspace}
@@ -8,7 +14,7 @@
 \usepackage{appendix}
 \usepackage[flushleft]{threeparttable}
 \usepackage{multirow}
-\usepackage[comma, sort&compress]{natbib}% Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+%\usepackage[comma, sort&compress]{natbib}% Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
 \usepackage{graphicx}
 %\bibliographystyle{plainnat}
 \bibliographystyle{agsm}
@@ -23,13 +29,18 @@
 \definecolor{mygrey}{gray}{0.95}
 \lstset{backgroundcolor=\color{mygrey}}
 \begin{document}
-\title{Speculation in foreign exchange: noise or information}
-\author{Rob Hayward\footnote{University of Brighton Business School, Lewes Road, Brighton, BN2 4AT; Telephone 01273 642586.  rh49@brighton.ac.uk. }} 
-\date{\today}
-\maketitle
+\begin{frontmatter}
+\title{Speculation in foreign exchange: noise or information?}
+\author{Rob Hayward\footnote{University of Brighton Business School, Lewes Road, Brighton, BN2 4AT; Telephone 01273 642586.  rh49@brighton.ac.uk.}}
+
 \begin{abstract}
 If foreign exchange prices are driven by speculation based on noise rather than information, extreme levels of speculative sentiment and speculative activity should lead to price reversals. Informed speculation is sustainable as it is part of the price discovery process. A unique set of option prices measure speculative sentiment while regulatory positions determine the weight of speculative activity.  An event study shows that extremes of speculative sentiment or speculative activity do not increase the probability of price reversal, though variance-measured risk increases.  Price activity after the extreme is close to a random walk. This supports the view that speculation is informed and part of the process of price-discovery rather than uninformed noise.      
 \end{abstract}
+\begin{keyword}
+JEL classification: G12, G14, G15; information, noise-trading, event studies.
+\end{keyword}
+
+\end{frontmatter}
 \section*{Introduction}
 Ideas about the way that speculation affects financial markets span a broad range.  Towards one end is the view of \citet[p. 101]{Keynes1936} that speculation is a myopic, sentiment-driven activity, dominated by the desire to ``beat the gun'' or  ``outwit the crowd''. Speculation is a problem that will cause booms, reversals and will discourage fundamental, long-term investment. It is noise that emerges from the interaction of collective sentiment to create trends in asset prices. 
 % This description provides an explanation for the observation from \citet{ShillerVol} that stock prices are more volatile than the underlying earnings information on which valuation should be based.
