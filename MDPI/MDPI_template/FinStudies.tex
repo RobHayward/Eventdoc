@@ -1,31 +1,119 @@
-\documentclass{article}
-%\graphicspath{{./Figures/}} % Specifies the directory where pictures are stored
-%\usepackage[dcucite]{harvard}
-% \documentclass[final,1p,times,authoryear]{elsarticle}
-%\documentclass[final,1p,times,twocolumn,authoryear]{elsarticle}
-%\documentclass[final,3p,times,authoryear]{elsarticle}
-%\documentclass[final,3p,times,twocolumn,authoryear]{elsarticle}
-%\documentclass[final,5p,times,authoryear]{elsarticle}
-%\documentclass[final,5p,times,twocolumn,authoryear]{elsarticle}
+%  LaTeX support: latex@mdpi.com 
+%  In case you need support, please attach all files that are necessary for compiling as well as the log file, and specify the details of your LaTeX setup (which operating system and LaTeX version / tools you are using).
+
+% You need to save the "mdpi.cls" and "mdpi.bst" files into the same folder as this template file.
+
+%=================================================================
+\documentclass[ijfs,article,submit,oneauthor,pdftex,10pt,a4paper]{mdpi} 
+%
+%--------------------
+% Class Options:
+%--------------------
+% journal
+%----------
+% Choose between the following MDPI journals:
+%ijfs, 
+%------
+% article
+%---------
+% The default type of manuscript is article, but can be replaced by: 
+% abstract, addendum, article, benchmark, book, bookreview, briefreport, casereport, changes, comment, commentary, communication, conceptpaper, correction, conferenceproceedings, conferencereport, expressionofconcern, meetingreport, creative, datadescriptor, discussion, editorial, essay, erratum, hypothesis, interestingimages, letter, meetingreport, newbookreceived, opinion, obituary, projectreport, reply, reprint, retraction, review, perspective, protocol, shortnote, supfile, technicalnote, viewpoint
+% supfile = supplementary materials
+% protocol: If you are preparing a "Protocol" paper, please refer to http://www.mdpi.com/journal/mps/instructions for details on its expected structure and content.
+%----------
+%submit
+%----------
+% The class option "submit" will be changed to "accept" by the Editorial Office when the paper is accepted. This will only make changes to the frontpage (e.g. the logo of the journal will get visible), the headings, and the copyright information. Also, line numbering will be removed. Journal info and pagination for accepted papers will also be assigned by the Editorial Office.
+%------------------
+% moreauthors
+%------------------
+% If there is only one author the class option oneauthor should be used. Otherwise use the class option moreauthors.
+%---------
+% pdftex
+%---------
+% The option pdftex is for use with pdfLaTeX. If eps figures are used, remove the option pdftex and use LaTeX and dvi2pdf.
+
+%=================================================================
+\firstpage{1} 
+\makeatletter 
+\setcounter{page}{\@firstpage} 
+\makeatother 
+\articlenumber{x}
+\doinum{10.3390/------}
+\pubvolume{xx}
+\pubyear{2017}
+\copyrightyear{2017}
+\externaleditor{Academic Editor: name}
+\history{Received: date; Accepted: date; Published: date}
+
+%------------------------------------------------------------------
+% The following line should be uncommented if the LaTeX file is uploaded to arXiv.org
+%\pdfoutput=1
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, calc, indentfirst, fancyhdr, graphicx, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, amsthm, hyphenat, natbib, hyperref, footmisc, geometry, caption, url, mdframed, tabto, soul, multirow, microtype, tikz
 \usepackage{rotating}
-\usepackage{amsmath}
-%\usepackage{setspace}
 \usepackage{pdflscape}
 \usepackage[flushleft]{threeparttable}
-\usepackage[comma, sort&compress]{natbib}% Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
-\usepackage{multirow}
-\bibliographystyle{agsm}
-\usepackage[colorlinks = true, citecolor = blue, linkcolor = blue]{hyperref}
-\title{Foreign Exchange Speculation: An event study}
-\author{Rob Hayward}
-\date{Dec 2017}
+%\usepackage[comma, sort&compress]{natbib}% Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+%=================================================================
+%% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition
+%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% Full title of the paper (Capitalized)
+\Title{Foreign Exchange Speculation: An Event Study}
+
+% Author Orchid ID: enter ID or remove command
+%\newcommand{\orcidauthorA}{0000-0000-000-000X} % Add \orcidA{} behind the author's name
+%\newcommand{\orcidauthorB}{0000-0000-000-000X} % Add \orcidB{} behind the author's name
+
+% Authors, for the paper (add full first names)
+\Author{Rob Hayward $^{1,\dagger,\ddagger}$}
+
+% Authors, for metadata in PDF
+\AuthorNames{Rob Hayward}
+
+% Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
+\address{$^{1}$ \quad University of Brighton; rh49@brighton.ac.uk}
+
+% Contact information of the corresponding author
+\corres{Correspondence: rh49@brighton.ac.uk; Tel.: +44-1273-642-586}
+
+% Current address and/or shared authorship
+\firstnote{Current address: Lewes Road, Brighton BN2 4AT} 
+%\secondnote{These authors contributed equally to this work.}
+% The commands \thirdnote{} till \eighthnote{} are available for further notes
+
+% Simple summary
+%\simplesumm{}
+
+% Abstract (Do not insert blank lines, i.e. \\) 
+\abstract{Does speculation facilitate price discovery or instability?  If it is price discovery, it is beneficial and should be encouraged; if it is instability, welfare is enhanced by its reduction. This paper seeks to distinguish between these two characteristics by analysing those times when speculation in the foreign exchange market is most extreme.  A series of event studies are conducted on the extremes of speculative activity and speculative sentiment. If speculation is noise,  extreme sentiment and extreme positions should lead to overshooting and increase risk of subsequent reversals. The finding that speculative extremes do not provide information about subsequent returns implies that speculation is part of the process of price discovery and that efforts to reduce it would reduce the informational efficiency of financial markets.}
+
+% Keywords
+\keyword{Foreign Exchange ; Speculation; Event-study.}
+
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
+%\PACS{J0101}
+%\MSC{}
+%\JEL{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Applied Sciences:
+%\featuredapplication{Authors are encouraged to provide a concise description of the specific application or a potential application of the work. This section is not mandatory.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Data:
+%\dataset{DOI number or link to the deposited data set in cases where the data set is published or set to be published separately. If the data set is submitted and will be published as a supplement to this paper in the journal Data, this field will be filled by the editors of the journal. In this case, please make sure to submit the data set as a supplement when entering your manuscript into our manuscript editorial system.}
+
+%\datasetlicense{license under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
+
+%\setcounter{secnumdepth}{4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
-\maketitle
-\begin{abstract}
-Does speculation facilitate price discovery or instability?  If it is price discovery, it is beneficial and should be encouraged; if it is instability, welfare is enhanced by its reduction. This paper seeks to distinguish between these two characteristics by analysing those times when speculation in the foreign exchange market is most extreme.  A series of event studies are conducted on the extremes of speculative activity and speculative sentiment. If speculation is noise,  extreme sentiment and extreme positions should lead to overshooting and increase risk of subsequent reversals. The finding that speculative extremes do not provide information about subsequent returns implies that speculation is part of the process of price discovery and that efforts to reduce it would reduce the informational efficiency of financial markets.
-
-\end{abstract}
-
 \section{Introduction}
 If speculation is based on information it is a stabilising force, providing liquidity and helping to ensure that markets swiftly find equilibrium. \citet{KeynesHedge} and \citet{HicksHedge} for example emphasised the role that speculation plays in facilitating financial market transactions. Speculators offer a service for a fee that is determined by the return on their activity.  While speculators may be trading on information or noise, informed speculators will tend to drive out the uninformed noise-traders according to \citet{FriedmanPositive}.   Nonetheless, the later Keynes regarded speculation as a myopic, sentiment-driven activity, dominated by the desire to ``beat the gun'' or  ``outwit the crowd'\citet[p. 101]{Keynes1936} and \citet{Delong1990noise} provides a model of cases where speculative noise provides a constrain on informed traders benefiting from their knowledge. 
 
@@ -207,7 +295,18 @@ It is encouraging that two very different measures of speculative activity produ
 
 This is important because there is no unambiguous view of speculative activity and because speculation is an important issues in a number of policy debates.  Most notably, the \emph{Tobin Tax} would put a charge against financial transactions, particularly in foreign exchange.  Part of the argument depends on speculation being uninformed as the reduced activity that is caused by the tax would, it is argued, limit volatility and allow more long-term fundamental evaluations to become prominent.  However, if speculation is informed and part of the price discovery process, this tax may have the opposite effect to what is envisaged.  These results suggest that it could reduce liquidity and increase volatility. 
 
-\bibliography{../../myrefs}
 
+
+%=====================================
+% References, variant B: external bibliography
+%=====================================
+\externalbibliography{yes}
+\bibliography{myrefs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% optional
+%\sampleavailability{Samples of the compounds ...... are available from the authors.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 
