@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{BIS}{BIS}{2016}]{BISFX2016}
+BIS. 2016.
+\newblock Triennial central bank survey of foreign exchange and derivatives
+  market activity in 2016.
+
 \bibitem[\protect\citeauthoryear{Black}{Black}{1986}]{BlackNoise}
 Black, F.. 1986.
 \newblock Noise.
@@ -27,11 +32,31 @@ Dolly, J.. 1933.
 \newblock Characteristics and procedures of common stock split-ups.
 \newblock {\em Harvard Business Review\/}~{\em 11\/}(3), 316 -- 327.
 
+\bibitem[\protect\citeauthoryear{Dow and Gorton}{Dow and
+  Gorton}{2008}]{GortonNoise}
+Dow, J. and G.~Gorton. 2008.
+\newblock Noise traders.
+\newblock In S.~N. Durlauf and L.~E. Blume (Eds.), {\em The New Palgrave:
+  Dictionary of Economics\/} (2 ed.). Palgrave Macmillan: New York.
+
 \bibitem[\protect\citeauthoryear{Evans and Lyons}{Evans and
   Lyons}{2002}]{Evans2002Order}
 Evans, M.~D. and R.~Lyons. 2002.
 \newblock Order flow and exchange rate dynamics.
 \newblock {\em The Journal of Political Economy\/}~{\em 10\/}(1), 170--180.
+
+\bibitem[\protect\citeauthoryear{Fama, Fisher, Jensen, and Roll}{Fama
+  et~al.}{1969}]{FamaFisherJensenRoll}
+Fama, E., L.~Fisher, M.~Jensen, and R.~Roll. 1969.
+\newblock The adjustment of stock prices to new information.
+\newblock {\em International Economic Review\/}~{\em 10\/}(1), 1--21.
+
+\bibitem[\protect\citeauthoryear{Feng, Zhang, and Friesen}{Feng
+  et~al.}{2015}]{FengZhangFriesen}
+Feng, S., Y.~Zhang, and G.~C. Friesen. 2015.
+\newblock The relationship between the option-implied volatility smile, stick
+  returns and hetrogenous beliefs.
+\newblock {\em International Review of Financial Analysis\/}~{\em 41}, 62--73.
 
 \bibitem[\protect\citeauthoryear{Friedman}{Friedman}{1953}]{FriedmanPositive}
 Friedman, M.. 1953.
@@ -76,6 +101,14 @@ Kyle, A.~S.. 1985.
 \newblock Continuous auctions and insider trading.
 \newblock {\em Econometrica\/}~{\em 53\/}(6), 1315--1335.
 
+\bibitem[\protect\citeauthoryear{Ramiah, Xu, and Moosa}{Ramiah
+  et~al.}{2015}]{Ramiah201589}
+Ramiah, V., X.~Xu, and I.~A. Moosa. 2015.
+\newblock Neoclassical finance, behavioral finance and noise traders: A review
+  and assessment of the literature.
+\newblock {\em International Review of Financial Analysis\/}~{\em 41}, 89 --
+  100.
+
 \bibitem[\protect\citeauthoryear{Sanders, Boris, and Manfredo}{Sanders
   et~al.}{2004}]{FuturesSanders}
 Sanders, D., K.~Boris, and M.~Manfredo. 2004.
@@ -88,5 +121,10 @@ Wang, C.. 2004.
 \newblock Futures trading activity and predictable foreign exchange market
   movements.
 \newblock {\em Journal of Banking and Finance\/}~{\em 28}, 1023 -- 1041.
+
+\bibitem[\protect\citeauthoryear{Yan}{Yan}{2011}]{Yan2011}
+Yan, S.. 2011.
+\newblock Jump risk, stock returns, and slope of implied volatility smile.
+\newblock {\em Journal of Financial Economics\/}~{\em 99\/}(1), 216--233.
 
 \end{thebibliography}
