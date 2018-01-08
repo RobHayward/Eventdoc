@@ -1,0 +1,135 @@
+English language and style ( ) Extensive editing of English language and style required 
+( ) Moderate English changes required 
+(x) English language and style are fine/minor spell check required 
+( ) I don't feel qualified to judge about the English language and style 
+Yes	Can be improved	Must be improved	Not applicable
+Does the introduction provide sufficient background and include all relevant references?	( )	( )	(x)	( )
+Is the research design appropriate?	( )	( )	(x)	( )
+Are the methods adequately described?	( )	( )	(x)	( )
+Are the results clearly presented?	( )	( )	(x)	( )
+Are the conclusions supported by the results?	( )	( )	(x)	( )
+Comments and Suggestions for Authors
+Reviews for the paper, "Foreign Exchange Speculation: An Event Study"
+
+Introduction:
+
+This paper addresses a topic related to the speculation in the FX market. Using an event study approach, the paper uses risk-reversal skews as measures of speculative sentiment. It tracks the FX cumulative returns following the day of the extreme risk reversal reading. These are then classified as speculation that is uninformed if followed by reversals on the post-reading dates and then as speculation that is informed if followed by a random walk on the post-reading dates.
+
+Major comments
+
+I am really not sure whether the "extreme" of the risk-reversal skew is an "event" in itself, could the "extreme" be a random one that "just happened" to hit the "extreme"? unless the paper referenced specific news event and check if it leads to the "extreme", then it could qualify as an "event", but at the moment, this seems not the case in the paper. There are too many reasons that could explain why option price/implied volatility change. It needs to be clearer what is the specific reason/event for it to strictly classified as an event. If not, then it just looks like a trading rule that is based on risk-reversal skew and this makes the findings, if any contribution, more like those about profit from trading, which isn't quite distinctively different from so many others that already addressed in the literature on FX market. I am therefore not very sure if the author is clear about the motivation of the paper and I cast doubts on the contribution/findings.
+
+Minor comments
+
+This paper is very difficult to read. The writer wrote the paper based on his own understanding, without considering the reader's position and much clarity is needed. I list out some as follows:
+
+1.       Line 12-21. Though some references are classical and pioneered in their fields. These need to be updated or reference similar updated application.
+
+2.       Line 22. It is not clear what the "two concepts" are? these need to be explicitly listed and explained.
+
+3.       Line 23. The "intensity of speculation" and "weight of speculative positions" need to be a bit clearer, identified and labelled in the subsequent discussion of the paper
+
+4.       Line 26. Does "extremes" imply exchange rate reaching the peak? if so, how you decide upon the peak of the exchange rate, say, if you used a daily/intra-day exchange rate data?
+
+5.       Line 24. how does informed traders activities imply exchange rate would move towards equilibrium. a summarised review of the literature in related area need to be included here to help support the motivation of the paper.
+
+6.       Line 61. Has risk-reversal skews been used/addressed in the literature? How can this be used to make "speculative positions"?
+
+7.       Lines 62-63. Are these currency call/put options?
+
+8.       Lines 62-64. what is the claim of the random walk exchange rate movement towards 1 month based on? Is "1 month" a random choice? Also need to clarify delta and explain in full.
+
+9.       footnote 3 does not help at all with no clarification of what it implied for delta.
+
+10.   Lines 66-69. the "indication" of "the relationship between implied volatility for calls and implied volatilities for puts for the same delta and maturity strike" is very unclear and vague. It does not contribute to help to understand the subsequent Lines 70-73.
+
+11.   Line 74. What are the "positions" about? and are these daily positions and over what period?
+
+12.   The conclusion of the paper is "too simplistic", though it may appear relevant to bring up the taxation issue, it is even more important to discuss the limitation. For example, are there other necessary factors to take into account to further qualify the claims as to whether it is an informed or uninformed speculations. The paper needs to be stronger on building its depth by exploring issues, that could improve the existing findings, that could be considered as a future research.
+
+ 
+
+ 
+
+
+
+
+peer-review-2307803.v1.pdf
+Submission Date 08 December 2017
+Date of this review 08 Jan 2018 08:51:38
+
+English language and style ( ) Extensive editing of English language and style required 
+( ) Moderate English changes required 
+(x) English language and style are fine/minor spell check required 
+( ) I don't feel qualified to judge about the English language and style 
+Yes	Can be improved	Must be improved	Not applicable
+Does the introduction provide sufficient background and include all relevant references?	( )	(x)	( )	( )
+Is the research design appropriate?	( )	(x)	( )	( )
+Are the methods adequately described?	( )	( )	(x)	( )
+Are the results clearly presented?	( )	( )	(x)	( )
+Are the conclusions supported by the results?	( )	(x)	( )	( )
+Comments and Suggestions for Authors
+This is a good paper, with a useful originality and sound motivation. However substantial changes are required before the paper can be published. The main issue is that the paper reads like a shortened summary of the research. The paper assumes readers are already knowledgeable in the area and thus could not be understood by someone outside the field.
+
+Points: 
+
+Lines 12-21 - The first paragraph fails to outline the paper's main motivation. It also fails to clearly explain the difference between the concepts of informed and uninformed speculation. 
+
+Footnote 1 - The paper fails to provide a clear motivation why the FX market was chosen, apart from it size. The paper fails to outline the issues with results which this choice creates. The FX market price mechanism differs substantially from that of stock markets as FX pricing is 2-way and has weak fundamental values especially on a weekly basis. There is no discussion of why trading occurs at the extremes. The paper fails to explore how this may impact on the results. 
+
+Section 2 - The discussion is limited in understanding. e.g; Lines 54-59 - The paper asserts that trade will not occur unless there is uniformed opportunity for trade, as this creates differences in opinion about value. Yet trade occurs for other reasons; there may be genuine reasons for differences in opinion, esp in the FX market, time horizons may differ etc. The paper fails to tie the discussion about speculation into its model, which is based on forecasting the future price motion of a 1 month forward. The paper fails to discuss FX price formation at a weekly level, and how it differs from yearly or daily or hourly formation, and thus how speculative motivation may differ. Given that extremes are used in the results, it is surprising that there is no discussion of issues with extreme trading.
+
+Lines 74-79 - The paper fails to outline the data in any detail, and any issues which arise form this. The data seems to be weekly, yet there is no discussion of differences in price formation between this time horizon and longer/shorter horizons. No data limitations are considered.
+
+Line 80-83 - There is no discussion of method, just a reference to two other papers. Readers outside the field cannot be expected to know these papers thus rendering this paper worthless. There is no discussion of the limitations of the methodology. There is no discussion of the method used for differentiation of the two speculation types or the limitations. There is no mention of why extreme results link to returns.
+
+Line 98 - the correlation between sentiment & prices in mentioned but not explained. 
+
+Results - the level of significance is set at 5% but this is never explicitly stated. Results at 2 or 1% are not provided or any reasons why 5% is preferred. There is no recognition that using 5% will make some results randomly significant. There is no discussion whether 5% is useful for extreme values rather then the middle. Without the method outlined, the results cannot be understood by anyone who is not already well-read in this sub-field. 
+
+Conclusion section 5 - There is no evident attempt to tie the results back to the difference between informed and uniformed speculation. There is no attempt to tie this back to the mechanism of weekly price formation and how any implications for other time horizons. Policy implications are poorly explained, poorly motivated, and do not link back to the rest of the paper.
+
+
+Submission Date 08 December 2017
+Date of this review 08 Jan 2018 08:42:02
+© 1996-2018 MDPI AG (Basel, Switzerland) unless otherwise stated
+
+English language and style ( ) Extensive editing of English language and style required 
+( ) Moderate English changes required 
+( ) English language and style are fine/minor spell check required 
+(x) I don't feel qualified to judge about the English language and style 
+Yes	Can be improved	Must be improved	Not applicable
+Does the introduction provide sufficient background and include all relevant references?	(x)	( )	( )	( )
+Is the research design appropriate?	(x)	( )	( )	( )
+Are the methods adequately described?	( )	(x)	( )	( )
+Are the results clearly presented?	(x)	( )	( )	( )
+Are the conclusions supported by the results?	(x)	( )	( )	( )
+Comments and Suggestions for Authors
+Reviewer’s Report on
+
+“Foreign Exchange Speculation: An Event Study”
+
+Manuscript# ijfs-255617
+
+Summary:
+
+This study evaluates the dominance of either of two views - informed speculation and uninformed speculation - by investigating the relation between the intensity of speculation and the weight of speculative positions related to consequent changes in foreign exchange rates. On one hand, as per informed speculation view, the informed speculators drives exchange rates towards equilibrium and prices should follow a random walk after “extreme” events. On the other hand, as per uninformed speculation view, uninformed speculator activity can be considered as noise, and the price deviation corresponding to an “extreme” event followed by price reversals.
+
+The study uses unique series of option risk-reversal skews to measure of speculative sentiment and the sample includes the weekly information about the open positions by private entities in the US derivative market from The Commodity Futures Trading Commission [CFTC]. The event study reveals that extreme events followed by a random walk and hence the research find support in favour of dominance of informed speculation as opposed to uninformed speculation. There are some evidence of momentum of prices following changes of speculator positions.
+
+Overall assessment:
+
+·         The topic aims to uncover an important issue - whether exchange rate changes surrounding “extreme” events reflects more of informed or uninformed speculators. In this regard, it provided some novel findings using event study favouring informed speculation.
+
+·         The results are robust to alternative event window and the quantile choices.
+
+·         The writing of the paper appears good.
+
+·         The topic and empirical method also deem reasonable.
+
+With the caveat that I am not an expert in foreign exchange market related research topic, I consider this paper provides some useful novel evidence on the role of information in foreign exchange rate movements following some “extreme” events.
+
+
+Submission Date 08 December 2017
+Date of this review 01 Jan 2018 03:25:00
+© 1996-2018 MDPI AG (Basel, Switzerland) unless otherwise stated
