@@ -1,0 +1,49 @@
+The first question is whether risk-reversal can be a measure of sentiment.  Option risk-reversal is widely used as a measure of market sentiment (see? Pages, H. 1996, Is There a Premium for Currencies Correlated with Volatilty?  Some Evidencefrmo Risk Reversals. Dir des Etudes Economiques et de la Recherche.  The reference is \citet{pages1966there}; Bates (1990) makes the case that risk-reversals represent a crash-premium that reflects the probability that there will be an exchange rate jump.  Malz )1994) has used risk-reversals to assess the the probabilty of exchange rate realignments.  
+
+Page finds that these option-based indicators provide information about the forward bias. The find that the at-the-money volatility is the best guess at instantaneous volatility and the risk-reversal is the market measure of the comovement between spot rates and their volatility. They show that risk-reversal indicate the difference in likely deviation from large upward and large downward deviations from the forward rate. 
+
+Bates, David, "The crash premium: option pricing under asymmetric process, wtih application to options on Deutschemark futures", Wharton School, University of Pennsylvania. 
+
+Bates, David S. (1993), "Jumps and stochastic volatility: exchange rate processes implicit in PHLC Deutsche options", NBER Woreking Paper No. 4596. 
+
+Opton prices are used to extract information about the probability density function (PDF) of exchange rates.  The first four momnents of this distribtion are used to characterise market expectatons about future exchange rates.  The method developed by Melick and Thomas (1997) use implied volatility, risk reversal strangle.  
+
+Gabriele Gaati and William R. Melick, "Perceived Central Bank Intervention and Market Expectations: An Empirical Study of the Yen/Dollar Exchange Rates, 1993-96.  BIS Working Paper 77. Dec 2005. 
+
+? show that the skew or the pdf (implied from the risk-reversal) is assocated with informaton about central bank intervention and therefore with chaning maret expectations about future exchange rates. 
+
+Malick, William and Charles Thomas (1997), "Using opton prices to infer PDFs for asset prices: An application to oil prices during the gulf crisis", Journal of Financial and Quantitative Analysis, 32, 91-115.
+
+I can used the explanation from the Pages paper:  the quotes are in terms of implied volatility.  
+
+Pochin M. Shiue, "Recovering Implied Risk-neutral Density Functions:  Evidence from FTSE-100 Index Options, Journal of Financial Studies, 9 (2), 2001. 39-67. 
+
+The ECB Monthly Bulletin May 2003 has information on risk reversal and EURO-USD.  It also makes the link between risk-reversal and implied risk-neutral density (RND).  
+
+The Norges bank paper (on the desktop) has a method for turning risk-reversal into pdf.  They show a method by Malz (1997) that combines the at=the-month implied volatiity with risk-reversal and strangle. 
+
+--------------------------------
+I need to show that the extreme risk-reversal is connected with news or information.  
+----------
+I need to explain each step clearly.  Can I go bac to my original document to fill in some of the gaps. 
+
+----------------------------
+Speaking about the relationship between postitions and events.  There are major news events that should have affected currencies: 1997 Asian financial crisis; Gulf War 1991; Iraq war 2003. 
+
+I will add Quebec referendum 1995 (took place Oct 30 1995).  No won by 50.58%. It is clear that there was some nervousness ahead of the result. 
+
+----------------
+The recent concern about speculation has focused on its role in the recent commodity boom.  For example, Scott H. Irwin, Dwight R. Sanders, Robert P Merrin, "Devil or Angel? The Role of Spculation in the Recent Commodity Price Boom (and Bust)", Journal of Agricultural and Applied Economics, 41 (3) 377-391 (January 2015).  Tests the assertion that commodity speculation caused a bubble that was reversed. They refute this argument citing the working of commodity futures, the nature of market activity in the perid nder investigation, the evidence that speculative positions do not lead prices and rather see this as part of the common attack on speculation that arises whenever prices are volatiile. 
+
+Authors of the attack include: Gheit 2008, Masters 2008, Masters and White 2008. They argue that the speculation causes overvauation. 
+
+Also cite D.S. Jacks, 2007, "Populists vs Theorists: Futures Markets and the Volatilty of Prices", Explorations in Economic History, 44 342-362. Documents the hostility to speuclation. 
+
+There is a link between noise-trading and speculation. For example, Oliver Jeanne and Andrew K. Rose, "Noise Trading and Exchange Rate Regimes" in the Quearterly Journal of Econoics, vol 117, issue 2, May 2002.  537-569. 
+
+A number of papers have discussed noise-trading with misalignment and volatilkity including: 
+
+Rahui Verma and Priti Verma, 2007, "Noise Trading and Stock Market Volatilty", Journal of Multinational Financial Management, 17, 3, 231-243. 
+
+Hongjun Yan, 2009, "Is Noise Trading Cancelled out by Aggregation?", Management Science, 56, 7, 1047-1059. 
+
