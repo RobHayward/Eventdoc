@@ -1,49 +1,61 @@
-The first question is whether risk-reversal can be a measure of sentiment.  Option risk-reversal is widely used as a measure of market sentiment (see? Pages, H. 1996, Is There a Premium for Currencies Correlated with Volatilty?  Some Evidencefrmo Risk Reversals. Dir des Etudes Economiques et de la Recherche.  The reference is \citet{pages1966there}; Bates (1990) makes the case that risk-reversals represent a crash-premium that reflects the probability that there will be an exchange rate jump.  Malz )1994) has used risk-reversals to assess the the probabilty of exchange rate realignments.  
+Thank you so much for taking the time to read and critique my paper. The comments are invaluable and I have endeavoured to address them all in full. To start with the third review (which seems to present the most fundamental and comprehensive questions), 
 
-Page finds that these option-based indicators provide information about the forward bias. The find that the at-the-money volatility is the best guess at instantaneous volatility and the risk-reversal is the market measure of the comovement between spot rates and their volatility. They show that risk-reversal indicate the difference in likely deviation from large upward and large downward deviations from the forward rate. 
+Major comments
+I take your point that this is not a conventional event study. However, I would argue that one of the interesting aspect of the paper is the extension of the event study method to cases where the event window surrounds other types of information.  In this case that information is the extreme levels of speculative sentiment and extreme short or long positions held by speculativce accounts.  I would like to know what happens at these extremes because of the contrast between a view of speculation that regards it as uninformed and disruptive and that which asserts that speculation is informed and part of the process of price discovery.  If speculation is uninformed when speculative sentiment or speculative positions are extemely bias to one direction, there should be the greatest divergence from fundamental value and therefore the greatest risk of reversal; if speculation is informed these extremes are part of the adjustment to a new equilibrium.  I have added some comments to the section that discusses the event study method in an attempt to reinforce this point. 
 
-Bates, David, "The crash premium: option pricing under asymmetric process, wtih application to options on Deutschemark futures", Wharton School, University of Pennsylvania. 
+I do not think that risk-reversals are random but reflect changes in market expectations.  However, I realise that I have not made the case effectively.  Figures 1 and 2 highlight the common finding of comovement between risk-reversals and asset prices. I have identified this explicitly and also added a section that discusses the use of options to uncover market expectations. This includes some references to the literature on the extraction of market expectations from options as well as previus uses of risk-revresals as measures of market sentiment. I hope that I have thereby more effectively established a link between risk-reversals and speculative sentiment. 
 
-Bates, David S. (1993), "Jumps and stochastic volatility: exchange rate processes implicit in PHLC Deutsche options", NBER Woreking Paper No. 4596. 
+More generally, I realise that I have glossed over some of steps that have been taken and some of the necessary explanations.  I have added some additional commentary. See for example additons...
 
-Opton prices are used to extract information about the probability density function (PDF) of exchange rates.  The first four momnents of this distribtion are used to characterise market expectatons about future exchange rates.  The method developed by Melick and Thomas (1997) use implied volatility, risk reversal strangle.  
+To address the other points:
 
-Gabriele Gaati and William R. Melick, "Perceived Central Bank Intervention and Market Expectations: An Empirical Study of the Yen/Dollar Exchange Rates, 1993-96.  BIS Working Paper 77. Dec 2005. 
+1. I have added some more contemporary discussion of the nature of speculation.  This is sometimes made in the context of noise-traders and has been part of the debate over the costs and benefits of a transaction tax as well as the influence of speculation on things like commodities prices. See
 
-? show that the skew or the pdf (implied from the risk-reversal) is assocated with informaton about central bank intervention and therefore with chaning maret expectations about future exchange rates. 
+2. I have tried to make this explicit in addition number 1. 
 
-Malick, William and Charles Thomas (1997), "Using opton prices to infer PDFs for asset prices: An application to oil prices during the gulf crisis", Journal of Financial and Quantitative Analysis, 32, 91-115.
+3. I have added an explanation (addition number 2) and I have addressed this in other parts of the documednt. 
 
-I can used the explanation from the Pages paper:  the quotes are in terms of implied volatility.  
+4."Extremes" refers to either speculative sentiment or speculative positins (addition number 3). This is one of the clarification cases that I refer to in point 3 above. 
 
-Pochin M. Shiue, "Recovering Implied Risk-neutral Density Functions:  Evidence from FTSE-100 Index Options, Journal of Financial Studies, 9 (2), 2001. 39-67. 
+5. I have added some references to the price discovery literatre that makes the link between order flow and the movement of asset prices towards equilibrium. This is part of addition 2. 
 
-The ECB Monthly Bulletin May 2003 has information on risk reversal and EURO-USD.  It also makes the link between risk-reversal and implied risk-neutral density (RND).  
+6. There is a discussion of the use of option to generate market expectations in the addition ...).  The sentiment and positins are separate series.  I hope that I have made this more evident with the changes discussed in point 3 above. 
 
-The Norges bank paper (on the desktop) has a method for turning risk-reversal into pdf.  They show a method by Malz (1997) that combines the at=the-month implied volatiity with risk-reversal and strangle. 
+7 The risk-reversal is a combined put and call.  This is explained in footnote 3. 
 
---------------------------------
-I need to show that the extreme risk-reversal is connected with news or information.  
-----------
-I need to explain each step clearly.  Can I go bac to my original document to fill in some of the gaps. 
+8. The risk-reversals have one month maturity.  This is now explicit (addition 4). 
 
-----------------------------
-Speaking about the relationship between postitions and events.  There are major news events that should have affected currencies: 1997 Asian financial crisis; Gulf War 1991; Iraq war 2003. 
+9. I am afraid that I do not understand this point.  The footnote explains the relatinship between risk-reversal and the regular call and put options. I can take it out if necessary but I think that it is necessary to address your point 7 above. I also do not see the importance of the delta.  The relationship between the change in the exchange rate and the change in the optio price (delta) is equalised for calls and puts. It is standard to use the 25 delta for each.  
 
-I will add Quebec referendum 1995 (took place Oct 30 1995).  No won by 50.58%. It is clear that there was some nervousness ahead of the result. 
+10. To be addressed.
 
-----------------
-The recent concern about speculation has focused on its role in the recent commodity boom.  For example, Scott H. Irwin, Dwight R. Sanders, Robert P Merrin, "Devil or Angel? The Role of Spculation in the Recent Commodity Price Boom (and Bust)", Journal of Agricultural and Applied Economics, 41 (3) 377-391 (January 2015).  Tests the assertion that commodity speculation caused a bubble that was reversed. They refute this argument citing the working of commodity futures, the nature of market activity in the perid nder investigation, the evidence that speculative positions do not lead prices and rather see this as part of the common attack on speculation that arises whenever prices are volatiile. 
+11. The "positions" are the second series that are taken from the Commodoties Futures Trading Commission.  These are actual positions in the futures market from which a net-long or net-short measure is calculation.  The details of this are explained in addition x.  The discussion of this second series has been expanded significantly and I hope that this makes things clear. 
 
-Authors of the attack include: Gheit 2008, Masters 2008, Masters and White 2008. They argue that the speculation causes overvauation. 
+12.  I have addressed some of the limitations and I have moved the taxation issue to.....  I have added some questions for future research. 
 
-Also cite D.S. Jacks, 2007, "Populists vs Theorists: Futures Markets and the Volatilty of Prices", Explorations in Economic History, 44 342-362. Documents the hostility to speuclation. 
 
-There is a link between noise-trading and speculation. For example, Oliver Jeanne and Andrew K. Rose, "Noise Trading and Exchange Rate Regimes" in the Quearterly Journal of Econoics, vol 117, issue 2, May 2002.  537-569. 
 
-A number of papers have discussed noise-trading with misalignment and volatilkity including: 
+Second Review 
+Initial general comments
+I have expand the paper from a "shortended summary" by adding additional explanation and clarification. 
 
-Rahui Verma and Priti Verma, 2007, "Noise Trading and Stock Market Volatilty", Journal of Multinational Financial Management, 17, 3, 231-243. 
+Points
+The motivation for the study is to investigate whether speculative in beneficial in terms of facilitating the movement of prices towards equilibrium and reducing volatility or damaging through its pressure to diverge from equilibrium and increasing speculation.  In the first case extreme speculation (whether measured by speculative sentiment or speculative positions) should not be followed by any particular movement; in the lateter prices should have a clear direction (reversal) after the extreme has been recorded.  I have added this to the paragraph in order to make this explicit.  
 
-Hongjun Yan, 2009, "Is Noise Trading Cancelled out by Aggregation?", Management Science, 56, 7, 1047-1059. 
+The foreign exchange market is chosen because the available risk-reversal data are from this market.  However, it is widely believed that this is a particularly speculative market as the decentralised dealer marketi, high liquiity and low dealing cost encourages short-term activity. In addition, the call for a tranaction tax has tended to focus on this market.  I have added some references and comments that I hope support this asertion. As noted in point x above, I have added a section on microstructure highlighting the link between order flow and price. In this section I have also tried to address the point that you make about liquidity trading. 
 
+You are certainly right about my presentation of the data.  I have added more about this.
+
+I have added to the discussion of the event study method so that it is more apparent to people outside the field and I have discussed some of teh limitations.  
+
+I do take your point about statistical significance.  The results would be the same whether the 1 percent or 10 percent threshold were applied.  As you say, with a 5 percent cut off some results will be significant even if the movement of exchange rates after speculative extremes is random - this is what we find, reinforcing the point that there is no particular pattern after these extremes.  I have tried to clarify and explain this point. 
+
+I have made changes to the conclusions that I hope address some of the concerns that you have. 
+
+I don't think that there are any issues to address for the first reviewer. 
+
+I hope that I have satisfied many of your concerns.  I am very happy to addrsss any additional issues that you have. 
+
+Regards, 
+
+Dr. Rob Hayward
