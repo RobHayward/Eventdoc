@@ -64,7 +64,7 @@ Friedman, M.. 1953.
 \newblock In {\em Essays in Positive Economics}, pp.\  157--203. University of
   Chicago Press.
 
-\bibitem[\protect\citeauthoryear{Glosten}{Glosten}{1985}]{glosten1985bid}
+\bibitem[\protect\citeauthoryear{Glosten}{Glosten}{1985}]{Glosten1985Bid}
 Glosten, L.. 1985.
 \newblock Bid, ask and transaction prices in a specialist market with
   heterogeneously informed traders.
@@ -100,6 +100,11 @@ Keynes, J.~M.. 1936.
 Kyle, A.~S.. 1985.
 \newblock Continuous auctions and insider trading.
 \newblock {\em Econometrica\/}~{\em 53\/}(6), 1315--1335.
+
+\bibitem[\protect\citeauthoryear{Lyons}{Lyons}{1995}]{Lyons1995Microstructure}
+Lyons, R.~K.. 1995.
+\newblock Tests of the microstruture hypothesis in the foreign exchange market.
+\newblock {\em Journal of Financial Economics\/}~{\em 39\/}(2-3), 321--351.
 
 \bibitem[\protect\citeauthoryear{Ramiah, Xu, and Moosa}{Ramiah
   et~al.}{2015}]{Ramiah201589}
