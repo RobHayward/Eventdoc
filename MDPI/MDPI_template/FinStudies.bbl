@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{??}{Sco}{}]{ScottSpec}
+
+
+\bibitem[\protect\citeauthoryear{??}{Jac}{}]{Jacksspec}
+
+
 \bibitem[\protect\citeauthoryear{BIS}{BIS}{2016}]{BISFX2016}
 BIS. 2016.
 \newblock Triennial central bank survey of foreign exchange and derivatives
@@ -106,6 +112,12 @@ Lyons, R.~K.. 1995.
 \newblock Tests of the microstruture hypothesis in the foreign exchange market.
 \newblock {\em Journal of Financial Economics\/}~{\em 39\/}(2-3), 321--351.
 
+\bibitem[\protect\citeauthoryear{Pindyck and Rotemberg}{Pindyck and
+  Rotemberg}{1990}]{PindyckSpec}
+Pindyck, R. and J.~Rotemberg. 1990.
+\newblock The excess vo-movement of commodity prices.
+\newblock {\em Economic Journal\/}~{\em 100}, 1173--1189.
+
 \bibitem[\protect\citeauthoryear{Ramiah, Xu, and Moosa}{Ramiah
   et~al.}{2015}]{Ramiah201589}
 Ramiah, V., X.~Xu, and I.~A. Moosa. 2015.
@@ -114,12 +126,24 @@ Ramiah, V., X.~Xu, and I.~A. Moosa. 2015.
 \newblock {\em International Review of Financial Analysis\/}~{\em 41}, 89 --
   100.
 
+\bibitem[\protect\citeauthoryear{Rime, Sarno, and Sojli}{Rime
+  et~al.}{2015}]{rime2010exchange}
+Rime, D., L.~Sarno, and E.~Sojli. 2015.
+\newblock Exchange rate forecasting, order flow and macroeconomic information.
+\newblock {\em Journal of International Economics\/}~{\em 80\/}(1), 72--88.
+
 \bibitem[\protect\citeauthoryear{Sanders, Boris, and Manfredo}{Sanders
   et~al.}{2004}]{FuturesSanders}
 Sanders, D., K.~Boris, and M.~Manfredo. 2004.
 \newblock Hedgers, funds and small speculators in the energy futures market: An
   analysis of the {CFTC}'s commitments of traders reports.
 \newblock {\em Energy Economics\/}~{\em 26}, 425 -- 445.
+
+\bibitem[\protect\citeauthoryear{Tang and Xiong}{Tang and
+  Xiong}{2012}]{TangSpec}
+Tang, K. and W.~Xiong. 2012.
+\newblock Index investment and the financialization of commodities.
+\newblock {\em Financial Analysts Journal\/}~{\em 68}, 54--74.
 
 \bibitem[\protect\citeauthoryear{Wang}{Wang}{2004}]{FuturesWang}
 Wang, C.. 2004.
