@@ -1,10 +1,15 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citeauthoryear{??}{Sco}{}]{ScottSpec}
+\bibitem[\protect\citeauthoryear{??}{Eit}{}]{Eitrheim}
+Can the price of currency options provide an indication of market perceptions
+  of the uncertainty attached to the krone exchange rate], author = {Oyvind
+  Eitrheim}, journal = {Norges Bank Econoic Bulletin}, volume = {3/99}, year =
+  {1999}.
 
-
-\bibitem[\protect\citeauthoryear{??}{Jac}{}]{Jacksspec}
-
+\bibitem[\protect\citeauthoryear{??}{ECB}{2003}]{ECBRR}
+. 2003, May.
+\newblock Using currency option-based indicators to assess sentiment in teh
+  foreign exchange markets.
 
 \bibitem[\protect\citeauthoryear{BIS}{BIS}{2016}]{BISFX2016}
 BIS. 2016.
@@ -15,6 +20,12 @@ BIS. 2016.
 Black, F.. 1986.
 \newblock Noise.
 \newblock {\em The Journal of Finance\/}~{\em 41\/}(3), 529--543.
+
+\bibitem[\protect\citeauthoryear{Black and Scholes}{Black and
+  Scholes}{1973}]{Black1973Options}
+Black, F. and M.~Scholes. 1973.
+\newblock The pricing of options and corporate liabilities.
+\newblock {\em Journal of Political Economy\/}~{\em 81\/}(3), 637--654.
 
 \bibitem[\protect\citeauthoryear{{CFTC}}{{CFTC}}{2012}]{cot}
 {CFTC}. 2012.
@@ -27,6 +38,26 @@ Chelley-Steeley, P.~L. and N.~Tsorakidis. 2013.
 \newblock {\em International Review of Financial Analysis\/}~{\em 29}, 119 --
   131.
 
+\bibitem[\protect\citeauthoryear{Cheung, Chinn, and Pascual}{Cheung
+  et~al.}{2005}]{ChinnModel}
+Cheung, Y.-W., M.~Chinn, and A.~G. Pascual. 2005.
+\newblock Empirical exchange rate models of the nineties: Are any fit to
+  survive?
+\newblock {\em Journal of International Money and Finance\/}~{\em 24\/}(7),
+  1150--1175.
+
+\bibitem[\protect\citeauthoryear{Coval and Shumway}{Coval and
+  Shumway}{2005}]{Coval2005}
+Coval, J.~D. and T.~Shumway. 2005.
+\newblock Do behavioural biases affect prices.
+\newblock {\em The Journal of Finance\/}~{\em 60\/}(1), 1--34.
+
+\bibitem[\protect\citeauthoryear{{De Bondt} and Thaler}{{De Bondt} and
+  Thaler}{1985}]{DeBondtOver}
+{De Bondt}, W. F.~M. and R.~H. Thaler. 1985.
+\newblock Does the stock market overreact?
+\newblock {\em The Journal of Finance\/}~{\em 40\/}(3), 793--805.
+
 \bibitem[\protect\citeauthoryear{{De Long}, Shleifer, Summers, and
   Waldmann}{{De Long} et~al.}{1990}]{Delong1990noise}
 {De Long}, B.~J., A.~Shleifer, L.~H. Summers, and R.~J. Waldmann. 1990.
@@ -38,12 +69,30 @@ Dolly, J.. 1933.
 \newblock Characteristics and procedures of common stock split-ups.
 \newblock {\em Harvard Business Review\/}~{\em 11\/}(3), 316 -- 327.
 
+\bibitem[\protect\citeauthoryear{Dornbusch}{Dornbusch}{1988}]{Dornbusch1988}
+Dornbusch, R.. 1988.
+\newblock {\em Exchange Rates and Inflation}.
+\newblock Cambridge, Cambridge University Press.
+
 \bibitem[\protect\citeauthoryear{Dow and Gorton}{Dow and
   Gorton}{2008}]{GortonNoise}
 Dow, J. and G.~Gorton. 2008.
 \newblock Noise traders.
 \newblock In S.~N. Durlauf and L.~E. Blume (Eds.), {\em The New Palgrave:
   Dictionary of Economics\/} (2 ed.). Palgrave Macmillan: New York.
+
+\bibitem[\protect\citeauthoryear{Eichengreen, Rose, and Wyplosz}{Eichengreen
+  et~al.}{1994}]{Eichengreen1994}
+Eichengreen, B., A.~Rose, and C.~Wyplosz. 1994.
+\newblock Speculative attacks on pegged exchanage rates: An empirical
+  exploration with special reference to the european monetary union.
+\newblock {\em INSEAD Working Papers\/}~{\em 94/55/EPS}.
+
+\bibitem[\protect\citeauthoryear{Eichengreen and Wypolsz}{Eichengreen and
+  Wypolsz}{1993}]{Eichengreen1988}
+Eichengreen, B. and C.~Wypolsz. 1993.
+\newblock The unstable {EMS}.
+\newblock {\em Brooking Papers on Economic Activity\/}~{\em 1}, 51--143.
 
 \bibitem[\protect\citeauthoryear{Evans and Lyons}{Evans and
   Lyons}{2002}]{Evans2002Order}
@@ -64,13 +113,41 @@ Feng, S., Y.~Zhang, and G.~C. Friesen. 2015.
   returns and hetrogenous beliefs.
 \newblock {\em International Review of Financial Analysis\/}~{\em 41}, 62--73.
 
+\bibitem[\protect\citeauthoryear{Frankel and Froot}{Frankel and
+  Froot}{1987a}]{FrankelFroot1987}
+Frankel, J.~A. and K.~Froot. 1987a.
+\newblock Using survey data to test standard propositions regarding exchange
+  rate expectations.
+\newblock {\em American Economic Review\/}~{\em 77}, 133 -- 153.
+
+\bibitem[\protect\citeauthoryear{Frankel and Froot}{Frankel and
+  Froot}{1987b}]{Frankel1987Using}
+Frankel, J.~A. and K.~A. Froot. 1987b.
+\newblock Using survey data to test standard propositions regarding exchange
+  rate expectations.
+\newblock {\em The American Economic Review\/}~{\em 77\/}(1), 133--153.
+
 \bibitem[\protect\citeauthoryear{Friedman}{Friedman}{1953}]{FriedmanPositive}
 Friedman, M.. 1953.
 \newblock The case for flexible exchange rates.
 \newblock In {\em Essays in Positive Economics}, pp.\  157--203. University of
   Chicago Press.
 
-\bibitem[\protect\citeauthoryear{Glosten}{Glosten}{1985}]{Glosten1985Bid}
+\bibitem[\protect\citeauthoryear{Gaati and Malick}{Gaati and
+  Malick}{2005}]{Gaati}
+Gaati, G. and W.~R. Malick. 2005.
+\newblock Perceived central bank intervention and market expectations: An
+  empirical study of the yen/dollar exchange rates, 1995-96.
+\newblock {\em BIS Working Paper 77\/}.
+
+\bibitem[\protect\citeauthoryear{Garman and Kohlhagan}{Garman and
+  Kohlhagan}{1983}]{GarmanKohlhagan}
+Garman, M. and S.~Kohlhagan. 1983.
+\newblock Foreign currency option values.
+\newblock {\em Journal of International Money and Finance\/}~{\em 2\/}(3), 231
+  -- 237.
+
+\bibitem[\protect\citeauthoryear{Glosten}{Glosten}{1985}]{glosten1985bid}
 Glosten, L.. 1985.
 \newblock Bid, ask and transaction prices in a specialist market with
   heterogeneously informed traders.
@@ -86,6 +163,17 @@ Grossman, S.~J. and J.~E. Stiglitz. 1980.
 Hicks, J.~R.. 1946.
 \newblock {\em Value and Capital}.
 \newblock Clarendon Press, Oxford.
+
+\bibitem[\protect\citeauthoryear{Jacks}{Jacks}{2015}]{Jacksspec}
+Jacks, D.. 2015.
+\newblock Populists vs theorists: Futures markets and the volatilty of prices.
+\newblock {\em Explorations in Economic History\/}~{\em 41\/}(3), 377--391.
+
+\bibitem[\protect\citeauthoryear{Kahneman and Tversky}{Kahneman and
+  Tversky}{1979}]{Kahneman1979Prospect}
+Kahneman, D. and A.~Tversky. 1979.
+\newblock Prospect theory: An analysis of decision under risk.
+\newblock {\em Econometrica\/}~{\em 47\/}(2), 263--291.
 
 \bibitem[\protect\citeauthoryear{Kapner}{Kapner}{2006}]{Global}
 Kapner, K.. 2006.
@@ -112,11 +200,26 @@ Lyons, R.~K.. 1995.
 \newblock Tests of the microstruture hypothesis in the foreign exchange market.
 \newblock {\em Journal of Financial Economics\/}~{\em 39\/}(2-3), 321--351.
 
-\bibitem[\protect\citeauthoryear{Pindyck and Rotemberg}{Pindyck and
-  Rotemberg}{1990}]{PindyckSpec}
-Pindyck, R. and J.~Rotemberg. 1990.
-\newblock The excess vo-movement of commodity prices.
-\newblock {\em Economic Journal\/}~{\em 100}, 1173--1189.
+\bibitem[\protect\citeauthoryear{Malick and Thomas}{Malick and
+  Thomas}{1997}]{Malickoption}
+Malick, W. and C.~Thomas. 1997.
+\newblock Using option prices to infer pdfs for asset prices: An application to
+  oil prices during the gulf crisis.
+\newblock {\em Journal of Financial and Quantitative Analysis\/}~{\em 32},
+  91--115.
+
+\bibitem[\protect\citeauthoryear{Mayer}{Mayer}{1985}]{Mayer1985}
+Mayer, H.~W.. 1985.
+\newblock Interaction between the euro-currency markets and the exchange
+  markets.
+\newblock {\em BIS Economic Papers\/}~{\em 15}.
+
+\bibitem[\protect\citeauthoryear{Meese and Rogoff}{Meese and
+  Rogoff}{1983}]{Meese1983Empirical}
+Meese, R. and K.~Rogoff. 1983.
+\newblock Empirical exchange rate models of the seventies do they fit out of
+  sample?
+\newblock {\em Journal of International Economics\/}~{\em 14\/}(1-2), 3--24.
 
 \bibitem[\protect\citeauthoryear{Ramiah, Xu, and Moosa}{Ramiah
   et~al.}{2015}]{Ramiah201589}
@@ -132,6 +235,13 @@ Rime, D., L.~Sarno, and E.~Sojli. 2015.
 \newblock Exchange rate forecasting, order flow and macroeconomic information.
 \newblock {\em Journal of International Economics\/}~{\em 80\/}(1), 72--88.
 
+\bibitem[\protect\citeauthoryear{Ronals}{Ronals}{}]{McKinnon1986}
+Ronals, I.~M.
+\newblock Foreign exchange dealers, the domestic money market and stabilising
+  speculation.
+\newblock In J.~S. Cohen (Ed.), {\em International Monetary Problems and
+  Supply-side Economics}, pp.\  28--55. Houndsmills, Basingstoke, London.
+
 \bibitem[\protect\citeauthoryear{Sanders, Boris, and Manfredo}{Sanders
   et~al.}{2004}]{FuturesSanders}
 Sanders, D., K.~Boris, and M.~Manfredo. 2004.
@@ -139,17 +249,46 @@ Sanders, D., K.~Boris, and M.~Manfredo. 2004.
   analysis of the {CFTC}'s commitments of traders reports.
 \newblock {\em Energy Economics\/}~{\em 26}, 425 -- 445.
 
+\bibitem[\protect\citeauthoryear{Shiue}{Shiue}{2001}]{Pochin}
+Shiue, P.~M.. 2001.
+\newblock Recovering impliled risk-neutral density functions: Evidence form
+  ftse-100 index options.
+\newblock {\em Journal of Financial Studies\/}~{\em 9\/}(2), 39--67.
+
 \bibitem[\protect\citeauthoryear{Tang and Xiong}{Tang and
   Xiong}{2012}]{TangSpec}
 Tang, K. and W.~Xiong. 2012.
 \newblock Index investment and the financialization of commodities.
 \newblock {\em Financial Analysts Journal\/}~{\em 68}, 54--74.
 
+\bibitem[\protect\citeauthoryear{Tobin}{Tobin}{1978}]{TobinTax}
+Tobin, J.. 1978.
+\newblock A proposal for international monetary reform.
+\newblock {\em Eastern Economic Journal\/}~{\em 4}.
+
+\bibitem[\protect\citeauthoryear{Tobin}{Tobin}{1988}]{Tobin1988a}
+Tobin, J.. 1988.
+\newblock The state of exchange rate theory, some sceptical remarks.
+\newblock In R.~N. Cooper (Ed.), {\em International Monetary Systems Under
+  Flexible Exchange Rates}, pp.\  115--128. Cambridge.
+
+\bibitem[\protect\citeauthoryear{Verma and Verma}{Verma and
+  Verma}{2007}]{Verma}
+Verma, R. and P.~Verma. 2007.
+\newblock Noise trading and stock market volatility.
+\newblock {\em Journal of Miltinational Financial Management\/}~{\em 17\/}(3),
+  231--243.
+
 \bibitem[\protect\citeauthoryear{Wang}{Wang}{2004}]{FuturesWang}
 Wang, C.. 2004.
 \newblock Futures trading activity and predictable foreign exchange market
   movements.
 \newblock {\em Journal of Banking and Finance\/}~{\em 28}, 1023 -- 1041.
+
+\bibitem[\protect\citeauthoryear{Yan}{Yan}{2009}]{Hongjun}
+Yan, H.. 2009.
+\newblock Is noise trading cancelled out by aggregation?
+\newblock {\em Management Science\/}~{\em 56\/}(7), 1047--1059.
 
 \bibitem[\protect\citeauthoryear{Yan}{Yan}{2011}]{Yan2011}
 Yan, S.. 2011.
